@@ -1,0 +1,781 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30D3FF5E329FC0572059D000 /* libPods-FOMOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2A9CA24656A0EE7CD62342 /* libPods-FOMOUITests.a */; };
+		37B5AF430B7E9579616667D0 /* libPods-FOMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF52C746A22709780E71A90 /* libPods-FOMOTests.a */; };
+		401601EC4B6B8EFB330C498C /* libPods-FOMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */; };
+		845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845579181FA0700000818965 /* BuyDrinksViewController.m */; };
+		8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455791B1FA072B000818965 /* AddFundsViewController.m */; };
+		845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E69291F9FE08700F874F0 /* AppDelegate.m */; };
+		845E692D1F9FE08700F874F0 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E692C1F9FE08700F874F0 /* HomeViewController.m */; };
+		845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E692F1F9FE08700F874F0 /* ProfileViewController.m */; };
+		845E69331F9FE08700F874F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E69311F9FE08700F874F0 /* Main.storyboard */; };
+		845E69351F9FE08700F874F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845E69341F9FE08700F874F0 /* Assets.xcassets */; };
+		845E69381F9FE08700F874F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845E69361F9FE08700F874F0 /* LaunchScreen.storyboard */; };
+		845E693B1F9FE08700F874F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E693A1F9FE08700F874F0 /* main.m */; };
+		845E69451F9FE08700F874F0 /* FOMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E69441F9FE08700F874F0 /* FOMOTests.m */; };
+		845E69501F9FE08700F874F0 /* FOMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E694F1F9FE08700F874F0 /* FOMOUITests.m */; };
+		845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E695E1F9FE1A700F874F0 /* MapViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		845E69411F9FE08700F874F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845E691D1F9FE08700F874F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845E69241F9FE08700F874F0;
+			remoteInfo = FOMO;
+		};
+		845E694C1F9FE08700F874F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 845E691D1F9FE08700F874F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 845E69241F9FE08700F874F0;
+			remoteInfo = FOMO;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07020CAB37521391AEE889A8 /* Pods-FOMOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOUITests/Pods-FOMOUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0EF52C746A22709780E71A90 /* libPods-FOMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3815CA999CD048D784EA3FE5 /* Pods-FOMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		676DE04664313403672F0F0B /* Pods-FOMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		845579171FA0700000818965 /* BuyDrinksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyDrinksViewController.h; sourceTree = "<group>"; };
+		845579181FA0700000818965 /* BuyDrinksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyDrinksViewController.m; sourceTree = "<group>"; };
+		8455791A1FA072B000818965 /* AddFundsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFundsViewController.h; sourceTree = "<group>"; };
+		8455791B1FA072B000818965 /* AddFundsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddFundsViewController.m; sourceTree = "<group>"; };
+		845E69251F9FE08700F874F0 /* FOMO.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FOMO.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		845E69281F9FE08700F874F0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		845E69291F9FE08700F874F0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		845E692B1F9FE08700F874F0 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		845E692C1F9FE08700F874F0 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		845E692E1F9FE08700F874F0 /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		845E692F1F9FE08700F874F0 /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		845E69321F9FE08700F874F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		845E69341F9FE08700F874F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		845E69371F9FE08700F874F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		845E69391F9FE08700F874F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845E693A1F9FE08700F874F0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		845E69401F9FE08700F874F0 /* FOMOTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOMOTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845E69441F9FE08700F874F0 /* FOMOTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOMOTests.m; sourceTree = "<group>"; };
+		845E69461F9FE08700F874F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845E694B1F9FE08700F874F0 /* FOMOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FOMOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		845E694F1F9FE08700F874F0 /* FOMOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FOMOUITests.m; sourceTree = "<group>"; };
+		845E69511F9FE08700F874F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845E695D1F9FE1A700F874F0 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		845E695E1F9FE1A700F874F0 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		B4D344A61EED07C8AFBC08F1 /* Pods-FOMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMO.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOMO/Pods-FOMO.debug.xcconfig"; sourceTree = "<group>"; };
+		D59DE4160770E79F0B3941C2 /* Pods-FOMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMO.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOMO/Pods-FOMO.release.xcconfig"; sourceTree = "<group>"; };
+		EA7422CF4D6C332862DB53E3 /* Pods-FOMOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOUITests/Pods-FOMOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF2A9CA24656A0EE7CD62342 /* libPods-FOMOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOMOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		845E69221F9FE08700F874F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401601EC4B6B8EFB330C498C /* libPods-FOMO.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E693D1F9FE08700F874F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37B5AF430B7E9579616667D0 /* libPods-FOMOTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E69481F9FE08700F874F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D3FF5E329FC0572059D000 /* libPods-FOMOUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		845E691C1F9FE08700F874F0 = {
+			isa = PBXGroup;
+			children = (
+				845E69271F9FE08700F874F0 /* FOMO */,
+				845E69431F9FE08700F874F0 /* FOMOTests */,
+				845E694E1F9FE08700F874F0 /* FOMOUITests */,
+				845E69261F9FE08700F874F0 /* Products */,
+				EF47B4F1AA472182A70A8C5C /* Pods */,
+				88109F52B36F5B85FB663A50 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		845E69261F9FE08700F874F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				845E69251F9FE08700F874F0 /* FOMO.app */,
+				845E69401F9FE08700F874F0 /* FOMOTests.xctest */,
+				845E694B1F9FE08700F874F0 /* FOMOUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		845E69271F9FE08700F874F0 /* FOMO */ = {
+			isa = PBXGroup;
+			children = (
+				845E69281F9FE08700F874F0 /* AppDelegate.h */,
+				845E69291F9FE08700F874F0 /* AppDelegate.m */,
+				845E692B1F9FE08700F874F0 /* HomeViewController.h */,
+				845E692C1F9FE08700F874F0 /* HomeViewController.m */,
+				845E695D1F9FE1A700F874F0 /* MapViewController.h */,
+				845E695E1F9FE1A700F874F0 /* MapViewController.m */,
+				845E692E1F9FE08700F874F0 /* ProfileViewController.h */,
+				845E692F1F9FE08700F874F0 /* ProfileViewController.m */,
+				845579171FA0700000818965 /* BuyDrinksViewController.h */,
+				845579181FA0700000818965 /* BuyDrinksViewController.m */,
+				8455791A1FA072B000818965 /* AddFundsViewController.h */,
+				8455791B1FA072B000818965 /* AddFundsViewController.m */,
+				845E69311F9FE08700F874F0 /* Main.storyboard */,
+				845E69341F9FE08700F874F0 /* Assets.xcassets */,
+				845E69361F9FE08700F874F0 /* LaunchScreen.storyboard */,
+				845E69391F9FE08700F874F0 /* Info.plist */,
+				845E693A1F9FE08700F874F0 /* main.m */,
+			);
+			path = FOMO;
+			sourceTree = "<group>";
+		};
+		845E69431F9FE08700F874F0 /* FOMOTests */ = {
+			isa = PBXGroup;
+			children = (
+				845E69441F9FE08700F874F0 /* FOMOTests.m */,
+				845E69461F9FE08700F874F0 /* Info.plist */,
+			);
+			path = FOMOTests;
+			sourceTree = "<group>";
+		};
+		845E694E1F9FE08700F874F0 /* FOMOUITests */ = {
+			isa = PBXGroup;
+			children = (
+				845E694F1F9FE08700F874F0 /* FOMOUITests.m */,
+				845E69511F9FE08700F874F0 /* Info.plist */,
+			);
+			path = FOMOUITests;
+			sourceTree = "<group>";
+		};
+		88109F52B36F5B85FB663A50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */,
+				0EF52C746A22709780E71A90 /* libPods-FOMOTests.a */,
+				FF2A9CA24656A0EE7CD62342 /* libPods-FOMOUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF47B4F1AA472182A70A8C5C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4D344A61EED07C8AFBC08F1 /* Pods-FOMO.debug.xcconfig */,
+				D59DE4160770E79F0B3941C2 /* Pods-FOMO.release.xcconfig */,
+				3815CA999CD048D784EA3FE5 /* Pods-FOMOTests.debug.xcconfig */,
+				676DE04664313403672F0F0B /* Pods-FOMOTests.release.xcconfig */,
+				EA7422CF4D6C332862DB53E3 /* Pods-FOMOUITests.debug.xcconfig */,
+				07020CAB37521391AEE889A8 /* Pods-FOMOUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		845E69241F9FE08700F874F0 /* FOMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845E69541F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMO" */;
+			buildPhases = (
+				67E3FB908F07CFF0763FCD8A /* [CP] Check Pods Manifest.lock */,
+				845E69211F9FE08700F874F0 /* Sources */,
+				845E69221F9FE08700F874F0 /* Frameworks */,
+				845E69231F9FE08700F874F0 /* Resources */,
+				B976AFF7C3FB796B60320280 /* [CP] Embed Pods Frameworks */,
+				4AFE611D5052C803BDB0B79D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FOMO;
+			productName = FOMO;
+			productReference = 845E69251F9FE08700F874F0 /* FOMO.app */;
+			productType = "com.apple.product-type.application";
+		};
+		845E693F1F9FE08700F874F0 /* FOMOTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845E69571F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMOTests" */;
+			buildPhases = (
+				C524F6F9CC355E3175131D97 /* [CP] Check Pods Manifest.lock */,
+				845E693C1F9FE08700F874F0 /* Sources */,
+				845E693D1F9FE08700F874F0 /* Frameworks */,
+				845E693E1F9FE08700F874F0 /* Resources */,
+				DC3E34CD7C98A4A08BD72B8A /* [CP] Embed Pods Frameworks */,
+				D18CF2BB39F7659FA28B7763 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845E69421F9FE08700F874F0 /* PBXTargetDependency */,
+			);
+			name = FOMOTests;
+			productName = FOMOTests;
+			productReference = 845E69401F9FE08700F874F0 /* FOMOTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		845E694A1F9FE08700F874F0 /* FOMOUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 845E695A1F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMOUITests" */;
+			buildPhases = (
+				9D726C968D5BE7D5D4A48128 /* [CP] Check Pods Manifest.lock */,
+				845E69471F9FE08700F874F0 /* Sources */,
+				845E69481F9FE08700F874F0 /* Frameworks */,
+				845E69491F9FE08700F874F0 /* Resources */,
+				0B42CECC172972E1AAF24794 /* [CP] Embed Pods Frameworks */,
+				7CE9B26903BA2D53B779748A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				845E694D1F9FE08700F874F0 /* PBXTargetDependency */,
+			);
+			name = FOMOUITests;
+			productName = FOMOUITests;
+			productReference = 845E694B1F9FE08700F874F0 /* FOMOUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		845E691D1F9FE08700F874F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = kahshe;
+				TargetAttributes = {
+					845E69241F9FE08700F874F0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					845E693F1F9FE08700F874F0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845E69241F9FE08700F874F0;
+					};
+					845E694A1F9FE08700F874F0 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 845E69241F9FE08700F874F0;
+					};
+				};
+			};
+			buildConfigurationList = 845E69201F9FE08700F874F0 /* Build configuration list for PBXProject "FOMO" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 845E691C1F9FE08700F874F0;
+			productRefGroup = 845E69261F9FE08700F874F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				845E69241F9FE08700F874F0 /* FOMO */,
+				845E693F1F9FE08700F874F0 /* FOMOTests */,
+				845E694A1F9FE08700F874F0 /* FOMOUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		845E69231F9FE08700F874F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845E69381F9FE08700F874F0 /* LaunchScreen.storyboard in Resources */,
+				845E69351F9FE08700F874F0 /* Assets.xcassets in Resources */,
+				845E69331F9FE08700F874F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E693E1F9FE08700F874F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E69491F9FE08700F874F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B42CECC172972E1AAF24794 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMOUITests/Pods-FOMOUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4AFE611D5052C803BDB0B79D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FOMO/Pods-FOMO-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMO/Pods-FOMO-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E3FB908F07CFF0763FCD8A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FOMO-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE9B26903BA2D53B779748A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMOUITests/Pods-FOMOUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D726C968D5BE7D5D4A48128 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FOMOUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B976AFF7C3FB796B60320280 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMO/Pods-FOMO-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C524F6F9CC355E3175131D97 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FOMOTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D18CF2BB39F7659FA28B7763 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC3E34CD7C98A4A08BD72B8A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		845E69211F9FE08700F874F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */,
+				845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */,
+				845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */,
+				8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */,
+				845E693B1F9FE08700F874F0 /* main.m in Sources */,
+				845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */,
+				845E692D1F9FE08700F874F0 /* HomeViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E693C1F9FE08700F874F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845E69451F9FE08700F874F0 /* FOMOTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		845E69471F9FE08700F874F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				845E69501F9FE08700F874F0 /* FOMOUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		845E69421F9FE08700F874F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845E69241F9FE08700F874F0 /* FOMO */;
+			targetProxy = 845E69411F9FE08700F874F0 /* PBXContainerItemProxy */;
+		};
+		845E694D1F9FE08700F874F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 845E69241F9FE08700F874F0 /* FOMO */;
+			targetProxy = 845E694C1F9FE08700F874F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		845E69311F9FE08700F874F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845E69321F9FE08700F874F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		845E69361F9FE08700F874F0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				845E69371F9FE08700F874F0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		845E69521F9FE08700F874F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		845E69531F9FE08700F874F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		845E69551F9FE08700F874F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4D344A61EED07C8AFBC08F1 /* Pods-FOMO.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		845E69561F9FE08700F874F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D59DE4160770E79F0B3941C2 /* Pods-FOMO.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMO/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		845E69581F9FE08700F874F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3815CA999CD048D784EA3FE5 /* Pods-FOMOTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FOMO.app/FOMO";
+			};
+			name = Debug;
+		};
+		845E69591F9FE08700F874F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 676DE04664313403672F0F0B /* Pods-FOMOTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMOTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMOTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FOMO.app/FOMO";
+			};
+			name = Release;
+		};
+		845E695B1F9FE08700F874F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA7422CF4D6C332862DB53E3 /* Pods-FOMOUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FOMO;
+			};
+			name = Debug;
+		};
+		845E695C1F9FE08700F874F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07020CAB37521391AEE889A8 /* Pods-FOMOUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FOMOUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kahshe.FOMOUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FOMO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		845E69201F9FE08700F874F0 /* Build configuration list for PBXProject "FOMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845E69521F9FE08700F874F0 /* Debug */,
+				845E69531F9FE08700F874F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845E69541F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMO" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845E69551F9FE08700F874F0 /* Debug */,
+				845E69561F9FE08700F874F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845E69571F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMOTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845E69581F9FE08700F874F0 /* Debug */,
+				845E69591F9FE08700F874F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		845E695A1F9FE08700F874F0 /* Build configuration list for PBXNativeTarget "FOMOUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				845E695B1F9FE08700F874F0 /* Debug */,
+				845E695C1F9FE08700F874F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 845E691D1F9FE08700F874F0 /* Project object */;
+}
