@@ -11,6 +11,12 @@
 @interface PaymentOptionsViewController ()
 @property (weak, nonatomic) IBOutlet UIView *header;
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
+@property (weak, nonatomic) IBOutlet UITextField *billingNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *cardNumberTextField;
+@property (weak, nonatomic) IBOutlet UITextField *expiryTextField;
+@property (weak, nonatomic) IBOutlet UIButton *addYourCardButton;
+
+
 
 @end
 
@@ -19,6 +25,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupHeader];
+    [self setupViews];
+}
+
+- (void)setupViews {
+    self.addYourCardButton.layer.cornerRadius = self.addYourCardButton.bounds.size.height/2;
 }
 
 - (void)setupHeader{
@@ -32,6 +43,9 @@
 }
 
 - (IBAction)closeButtonTapped:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)addButtonTapped:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

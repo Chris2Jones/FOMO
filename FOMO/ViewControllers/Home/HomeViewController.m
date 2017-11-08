@@ -7,7 +7,6 @@
 //
 
 #import "HomeViewController.h"
-#import "BarPickerViewController.h"
 
 @interface HomeViewController ()
 {

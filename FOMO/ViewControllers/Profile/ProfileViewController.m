@@ -114,9 +114,9 @@ static NSString *cellIdentifier1 = @"cell1";
                    action:@selector(changeLocationTapped)
          forControlEvents:UIControlEventTouchUpInside];
     }
-    button.layer.cornerRadius = 5;
     button.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:130.0/255.0 blue:0 alpha:1];
     button.frame = CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width - 20, 30.0);
+    button.layer.cornerRadius = button.bounds.size.height/2;
     [view addSubview:button];
     button.center = view.center;
     view.backgroundColor = [UIColor whiteColor];

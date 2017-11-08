@@ -1,22 +1,22 @@
 //
-//  BarPickerViewController.m
+//  SplashViewController.m
 //  FOMO
 //
-//  Created by admin on 10/24/17.
+//  Created by admin on 11/8/17.
 //  Copyright © 2017 kahshe. All rights reserved.
 //
 
-#import "BarPickerViewController.h"
+#import "SplashViewController.h"
 
-@interface BarPickerViewController ()
+@interface SplashViewController ()
 
 @end
 
-@implementation BarPickerViewController
+@implementation SplashViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.alpha = 0.5f;
+    // Do any additional setup after loading the view from its nib.
 }
 
 - (void)didReceiveMemoryWarning {

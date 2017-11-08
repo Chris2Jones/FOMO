@@ -501,52 +501,6 @@
             </objects>
             <point key="canvasLocation" x="1575" y="-783"/>
         </scene>
-        <!--Map-->
-        <scene sceneID="FyB-zF-cYv">
-            <objects>
-                <viewController id="W0k-tz-dPn" customClass="MapViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="gvB-rl-Be2"/>
-                        <viewControllerLayoutGuide type="bottom" id="MaI-oy-L4v"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aXe-o4-egr">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REZ-3n-ZCR">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FInd Your Friends!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPa-5G-Pyq">
-                                        <rect key="frame" x="71.5" y="26.5" width="232" height="38.5"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="IPa-5G-Pyq" firstAttribute="centerX" secondItem="REZ-3n-ZCR" secondAttribute="centerX" id="1DL-uh-Uhl"/>
-                                    <constraint firstAttribute="bottom" secondItem="IPa-5G-Pyq" secondAttribute="bottom" constant="5" id="S5e-HP-YxN"/>
-                                    <constraint firstAttribute="height" constant="70" id="eAJ-Ns-sXb"/>
-                                </constraints>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="REZ-3n-ZCR" firstAttribute="top" secondItem="aXe-o4-egr" secondAttribute="top" id="Peb-2h-1T8"/>
-                            <constraint firstAttribute="trailing" secondItem="REZ-3n-ZCR" secondAttribute="trailing" id="QGV-OZ-ewa"/>
-                            <constraint firstItem="REZ-3n-ZCR" firstAttribute="leading" secondItem="aXe-o4-egr" secondAttribute="leading" id="oNV-kF-D1n"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Map" image="Map" id="yMB-D1-1Vn"/>
-                    <connections>
-                        <outlet property="header" destination="REZ-3n-ZCR" id="VOC-W6-X2s"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nEQ-V9-j20" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="780" y="-88"/>
-        </scene>
         <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -600,7 +554,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="780" y="583.3583208395803"/>
+            <point key="canvasLocation" x="780" y="897"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -613,13 +567,69 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="W0k-tz-dPn" kind="relationship" relationship="viewControllers" id="n9T-3v-v4h"/>
+                        <segue destination="bCm-Mz-QFF" kind="relationship" relationship="viewControllers" id="GfT-WT-cmq"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="zfC-eZ-6cP">
+            <objects>
+                <viewController id="bCm-Mz-QFF" customClass="MapViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OgN-uF-di9"/>
+                        <viewControllerLayoutGuide type="bottom" id="7LJ-pW-ojL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="htZ-gd-xXt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b5o-05-586">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Friends!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjf-ak-pUL">
+                                        <rect key="frame" x="104" y="26.5" width="167" height="38.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="28"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hjf-ak-pUL" firstAttribute="centerX" secondItem="b5o-05-586" secondAttribute="centerX" id="Lks-cC-GmY"/>
+                                    <constraint firstAttribute="bottom" secondItem="hjf-ak-pUL" secondAttribute="bottom" constant="5" id="Y9n-8U-DKM"/>
+                                    <constraint firstAttribute="height" constant="70" id="kFC-Y5-yza"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UA4-eX-WN0" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="70" width="375" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7LJ-pW-ojL" firstAttribute="top" secondItem="UA4-eX-WN0" secondAttribute="bottom" id="Ehi-eF-q6s"/>
+                            <constraint firstAttribute="trailing" secondItem="UA4-eX-WN0" secondAttribute="trailing" id="SgY-LI-Vjz"/>
+                            <constraint firstAttribute="trailing" secondItem="b5o-05-586" secondAttribute="trailing" id="Tte-dT-qrM"/>
+                            <constraint firstItem="b5o-05-586" firstAttribute="leading" secondItem="htZ-gd-xXt" secondAttribute="leading" id="eKp-Um-Z2O"/>
+                            <constraint firstItem="b5o-05-586" firstAttribute="top" secondItem="htZ-gd-xXt" secondAttribute="top" id="ggI-J4-YeT"/>
+                            <constraint firstItem="UA4-eX-WN0" firstAttribute="leading" secondItem="htZ-gd-xXt" secondAttribute="leading" id="mCR-tb-cjW"/>
+                            <constraint firstItem="UA4-eX-WN0" firstAttribute="top" secondItem="b5o-05-586" secondAttribute="bottom" id="tYt-hm-NJU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="Map" id="9yf-4t-zpv"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="header" destination="b5o-05-586" id="E7W-ww-mF2"/>
+                        <outlet property="mapContainerView" destination="UA4-eX-WN0" id="FsO-kd-gGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cI4-p6-E9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="-93.103448275862078"/>
         </scene>
     </scenes>
     <resources>
