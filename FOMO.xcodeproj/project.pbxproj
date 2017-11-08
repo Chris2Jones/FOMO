@@ -23,6 +23,11 @@
 		845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E695E1F9FE1A700F874F0 /* MapViewController.m */; };
 		84923F831FB34FE00082BFA0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F811FB34FE00082BFA0 /* SplashViewController.m */; };
 		84923F841FB34FE00082BFA0 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84923F821FB34FE00082BFA0 /* SplashViewController.xib */; };
+		84923F881FB397590082BFA0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F871FB397590082BFA0 /* User.m */; };
+		84923F8B1FB398350082BFA0 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F8A1FB398350082BFA0 /* Drinks.m */; };
+		84923F8E1FB398A40082BFA0 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F8D1FB398A40082BFA0 /* Business.m */; };
+		84923F911FB399130082BFA0 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F901FB399130082BFA0 /* Transaction.m */; };
+		84923F941FB399C30082BFA0 /* Scanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F931FB399C30082BFA0 /* Scanner.m */; };
 		84C65D771FAEEDD200D91CFE /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D761FAEEDD200D91CFE /* ProfileHeaderView.m */; };
 		84C65D791FAEEE1300D91CFE /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D781FAEEE1300D91CFE /* ProfileHeaderView.xib */; };
 		84C65D861FB1377500D91CFE /* ProfileSecondHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D851FB1377500D91CFE /* ProfileSecondHeaderView.m */; };
@@ -86,6 +91,16 @@
 		84923F801FB34FE00082BFA0 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		84923F811FB34FE00082BFA0 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		84923F821FB34FE00082BFA0 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		84923F861FB397590082BFA0 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		84923F871FB397590082BFA0 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		84923F891FB398350082BFA0 /* Drinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
+		84923F8A1FB398350082BFA0 /* Drinks.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Drinks.m; sourceTree = "<group>"; };
+		84923F8C1FB398A40082BFA0 /* Business.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Business.h; sourceTree = "<group>"; };
+		84923F8D1FB398A40082BFA0 /* Business.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Business.m; sourceTree = "<group>"; };
+		84923F8F1FB399130082BFA0 /* Transaction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		84923F901FB399130082BFA0 /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
+		84923F921FB399C30082BFA0 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		84923F931FB399C30082BFA0 /* Scanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scanner.m; sourceTree = "<group>"; };
 		84C65D751FAEEDD200D91CFE /* ProfileHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
 		84C65D761FAEEDD200D91CFE /* ProfileHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		84C65D781FAEEE1300D91CFE /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
@@ -163,6 +178,7 @@
 		845E69271F9FE08700F874F0 /* FOMO */ = {
 			isa = PBXGroup;
 			children = (
+				84923F851FB397090082BFA0 /* Classes */,
 				84C65D741FAEED9C00D91CFE /* Views */,
 				84751AF81FAB3D1600C36718 /* Cells */,
 				84751AF71FAB3CEA00C36718 /* ViewControllers */,
@@ -255,6 +271,23 @@
 				84C65D941FB1630500D91CFE /* ChangeLocationViewController.xib */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		84923F851FB397090082BFA0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				84923F861FB397590082BFA0 /* User.h */,
+				84923F871FB397590082BFA0 /* User.m */,
+				84923F891FB398350082BFA0 /* Drinks.h */,
+				84923F8A1FB398350082BFA0 /* Drinks.m */,
+				84923F8C1FB398A40082BFA0 /* Business.h */,
+				84923F8D1FB398A40082BFA0 /* Business.m */,
+				84923F8F1FB399130082BFA0 /* Transaction.h */,
+				84923F901FB399130082BFA0 /* Transaction.m */,
+				84923F921FB399C30082BFA0 /* Scanner.h */,
+				84923F931FB399C30082BFA0 /* Scanner.m */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		84C65D741FAEED9C00D91CFE /* Views */ = {
@@ -592,19 +625,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84923F911FB399130082BFA0 /* Transaction.m in Sources */,
 				84C65D901FB15CFC00D91CFE /* PaymentOptionsViewController.m in Sources */,
 				84923F831FB34FE00082BFA0 /* SplashViewController.m in Sources */,
 				845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */,
 				84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */,
 				845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */,
+				84923F881FB397590082BFA0 /* User.m in Sources */,
 				84C65D771FAEEDD200D91CFE /* ProfileHeaderView.m in Sources */,
+				84923F8E1FB398A40082BFA0 /* Business.m in Sources */,
 				845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */,
 				8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */,
 				84C65D861FB1377500D91CFE /* ProfileSecondHeaderView.m in Sources */,
+				84923F941FB399C30082BFA0 /* Scanner.m in Sources */,
 				84F079E91FA7E6DF00E40DD2 /* CreditcardTableViewCell.m in Sources */,
 				845E693B1F9FE08700F874F0 /* main.m in Sources */,
 				84F079EE1FA7ED1600E40DD2 /* BarTableViewCell.m in Sources */,
 				845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */,
+				84923F8B1FB398350082BFA0 /* Drinks.m in Sources */,
 				845E692D1F9FE08700F874F0 /* HomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
