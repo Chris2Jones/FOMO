@@ -153,6 +153,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		841720131FB50AD60071569F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				845E69281F9FE08700F874F0 /* AppDelegate.h */,
+				845E69291F9FE08700F874F0 /* AppDelegate.m */,
+				845E69311F9FE08700F874F0 /* Main.storyboard */,
+				845E69341F9FE08700F874F0 /* Assets.xcassets */,
+				845E693A1F9FE08700F874F0 /* main.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		841720141FB50B520071569F /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				84923F801FB34FE00082BFA0 /* SplashViewController.h */,
+				84923F811FB34FE00082BFA0 /* SplashViewController.m */,
+				84923F821FB34FE00082BFA0 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
 		845E691C1F9FE08700F874F0 = {
 			isa = PBXGroup;
 			children = (
@@ -178,16 +200,12 @@
 		845E69271F9FE08700F874F0 /* FOMO */ = {
 			isa = PBXGroup;
 			children = (
+				845E69391F9FE08700F874F0 /* Info.plist */,
+				841720131FB50AD60071569F /* Main */,
 				84923F851FB397090082BFA0 /* Classes */,
 				84C65D741FAEED9C00D91CFE /* Views */,
 				84751AF81FAB3D1600C36718 /* Cells */,
 				84751AF71FAB3CEA00C36718 /* ViewControllers */,
-				845E69281F9FE08700F874F0 /* AppDelegate.h */,
-				845E69291F9FE08700F874F0 /* AppDelegate.m */,
-				845E69311F9FE08700F874F0 /* Main.storyboard */,
-				845E69341F9FE08700F874F0 /* Assets.xcassets */,
-				845E69391F9FE08700F874F0 /* Info.plist */,
-				845E693A1F9FE08700F874F0 /* main.m */,
 			);
 			path = FOMO;
 			sourceTree = "<group>";
@@ -213,9 +231,7 @@
 		84751AF71FAB3CEA00C36718 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				84923F801FB34FE00082BFA0 /* SplashViewController.h */,
-				84923F811FB34FE00082BFA0 /* SplashViewController.m */,
-				84923F821FB34FE00082BFA0 /* SplashViewController.xib */,
+				841720141FB50B520071569F /* Splash */,
 				848D2C441FB2922600456F45 /* Profile */,
 				848D2C431FB2921B00456F45 /* Map */,
 				848D2C421FB2920C00456F45 /* Home */,
