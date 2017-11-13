@@ -6,9 +6,11 @@ target 'FOMO' do
   # use_frameworks!
 
   # Pods for FOMO
-	
+
+    pod 'QRCodeReaderViewController'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
+	
 
   target 'FOMOTests' do
     inherit! :search_paths
