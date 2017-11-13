@@ -37,7 +37,7 @@
     marker.title = @"Kingston";
     marker.snippet = @"ON";
     marker2.title = @"Stages";
-    marker3.title = @"Ale";
+    marker3.title = @"Alehouse";
     marker4.title = @"Trinity";
     marker.map = self.mapContainerView;
     marker2.map = self.mapContainerView;
