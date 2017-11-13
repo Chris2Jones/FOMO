@@ -27,10 +27,22 @@
                                                             longitude:-76.492527
                                                                  zoom:16];
     GMSMarker *marker = [[GMSMarker alloc] init];
+    GMSMarker *marker2 = [[GMSMarker alloc] init];
+    GMSMarker *marker3 = [[GMSMarker alloc] init];
+    GMSMarker *marker4 = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake(44.2332813,-76.492527);
+    marker2.position = CLLocationCoordinate2DMake(44.232849,-76.4929419);
+    marker3.position = CLLocationCoordinate2DMake(44.233021,-76.4919934);
+    marker4.position = CLLocationCoordinate2DMake(44.233345,-76.4937106);
     marker.title = @"Kingston";
     marker.snippet = @"ON";
+    marker2.title = @"Stages";
+    marker3.title = @"Alehouse";
+    marker4.title = @"Trinity";
     marker.map = self.mapContainerView;
+    marker2.map = self.mapContainerView;
+    marker3.map = self.mapContainerView;
+    marker4.map = self.mapContainerView;
     self.mapContainerView.camera = camera;
     self.mapContainerView.myLocationEnabled = YES;
 }
