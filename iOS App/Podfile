@@ -6,7 +6,7 @@ target 'FOMO' do
   # use_frameworks!
 
   # Pods for FOMO
-
+    pod 'QR-Code-Encoder-for-Objective-C'
     pod 'QRCodeReaderViewController'
     pod 'GoogleMaps'
     pod 'GooglePlaces'

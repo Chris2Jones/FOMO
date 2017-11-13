@@ -7,87 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D2CBF2608C8ABAA0A691A34BFE9F31E /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD8974900D612A8D34D9CFFC93F90C4C /* QRCodeReaderViewController-dummy.m */; };
-		336480866F7DE81898D2EA9897DB87D3 /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76718843D5E399D3E8CE4E4E7574366E /* QRCodeReaderViewController.m */; };
-		400A25EF0D50F30F4906A2998CFEF3FC /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C67F103E39428F0145B2547FBAE9A83 /* QRCodeReaderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54DB5BD2C32F0C9E6E3A1BA695154178 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		5A6E42831C6218C2D7F098FD20568B78 /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CDA31312A588CDFB03C8F3C7A8DE5CE3 /* QRToggleTorchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		033AE871556F8358A47739369A028BBE /* Pods-FOMO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA468FADB1EAB6C7B020A8B72992870 /* Pods-FOMO-dummy.m */; };
+		161104CAECAF895703825EDB236B5F75 /* QRCodeReaderViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8389F223932CE5DE47DA8FFDD18EC05C /* QRCodeReaderViewController-dummy.m */; };
+		45DE53F2703F8262611347771BB96CCA /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B24A23778B68A40288A10D1AA4235822 /* QRToggleTorchButton.m */; };
+		5268D919C2074137169A71A120DA4617 /* QREncoder.h in Headers */ = {isa = PBXBuildFile; fileRef = BEB6D7969B7A27D957E1CF15D8E697FA /* QREncoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		542EDFDB4AFBAA77D58D08657131751F /* QR_Encode.h in Headers */ = {isa = PBXBuildFile; fileRef = C0817A7C2E7CEF521D3341AC6DC5BC04 /* QR_Encode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		587A17AF8EDBF86E3A530770400A4BF1 /* QREncoder.mm in Sources */ = {isa = PBXBuildFile; fileRef = EA6C139E55F464CA6FCB66CD2EA9A9B9 /* QREncoder.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		5E5129F3FBC0B7EE408B0508304D8C5D /* QRToggleTorchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C684A2E90D9D25B3CD2E561C25451EA /* QRToggleTorchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6265779ED6A4AD4455664D8C4DA97415 /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5397046A1775DDB592DEFB634B546BB3 /* QRCodeReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		658D18C2059E51505870AF354AAF88D9 /* Pods-FOMOTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 878BBEA10709750347FFA109A37AF302 /* Pods-FOMOTests-dummy.m */; };
-		6BA310446F58C11D7B86496D749F3397 /* QRCodeReaderViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F7E8F11036629307410DDA6F71D64BE /* QRCodeReaderViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6F35E51ADF69B4BCAC10057A93C1CB01 /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = AF863AF607B77E8E2079CFAE1BB17509 /* QRCodeReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		77D77C04F8FB66F06E3B41489D13A277 /* Pods-FOMO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA468FADB1EAB6C7B020A8B72992870 /* Pods-FOMO-dummy.m */; };
+		6B43DA397A47B3E07C1B71FC9DCC7634 /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F08F77B3E31EB4DAF93C27000E63392 /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		740047C39D8E1BF1E148C3D9A62FC0EE /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 36A7D6B15E2D4DE737C6A7B981614607 /* QRCodeReader.m */; };
+		7C2289E719F22A85FC3B3DAC55DCC60B /* QRCodeReaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAF424338C872FC87D7DB61C173569E /* QRCodeReaderViewController.m */; };
 		800F5E4F35CF6E8A56CDB2625B99C586 /* Pods-FOMOUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 034D17CE85A94889F666B26DD269CB39 /* Pods-FOMOUITests-dummy.m */; };
-		80981451E341BB4654667FB2911917C7 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 56025FD295D0C17689BC8542E55B2ED0 /* QRCameraSwitchButton.m */; };
+		8146EDECD89186649F30F2E978858D89 /* QR-Code-Encoder-for-Objective-C-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC9CDC3E07C9184B3B8A99D7C9124CB /* QR-Code-Encoder-for-Objective-C-dummy.m */; };
+		869E54C62BCFC53D70206B0CC5D2FD82 /* QR_Encode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 19C49E0DDBE6D7FD5658C8C4DE5C3C73 /* QR_Encode.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		86B53132881A76DF13A60B39954966D2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		9443D789692955768F190A37DA29B515 /* DataMatrix.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0D50326655A3B26254BC40EB6B0D4CA8 /* DataMatrix.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		954351C73DACA5D85433A7B7D87B66CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		AB729E09C8D235D1E09D0C3DCAA9D620 /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB462ACDED9C424D32C38A188F91A90 /* QRCodeReaderView.m */; };
-		B5B910157EEB70EBA68126E3A3BA074F /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = C8EEAB568A5DA429C5A0FB69F4A7B48B /* QRCameraSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BDC0046D8E638707062AF27D955CB6E4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		C2D2B9F26157646B38E4EA36998BE19A /* QRCodeReader.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F43B46AF01E190DC345A65D447108D5 /* QRCodeReader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9686D99FE339459E74A4D53A8DEE5965 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		9F2BE03CDF5C4B5CC58B7C7AAADE94A3 /* QRCameraSwitchButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 91B8E7890ACEA9FF92755A552C937A72 /* QRCameraSwitchButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0C91EBFCE7C4C67338521941BD148EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		A856FFC0B3EE7102F03470C1F62DD1EB /* QRCodeReaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A340378876C4BAE81070D61AFC67138 /* QRCodeReaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AA87370AFBC5AAF4646ABDB168621F2A /* DataMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = C66661A6D65D7D217909E53A57074687 /* DataMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEEA74E16B7F8F03650C7F92EF65F3C6 /* QRCameraSwitchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DA5DDB6C171BC943E2A100B4CCCCD5D1 /* QRCameraSwitchButton.m */; };
+		B13415675109A16E831A982EB44C517C /* QRCodeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E68DD645380BE17A438F7F6959C29EB /* QRCodeReaderView.m */; };
+		BAF9DDF4EF5324A866A65CEEDCBC25EC /* QRCodeReaderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 554E9023E17C45146EA00DE936C24049 /* QRCodeReaderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE1B14530CA98B8057977507BF91235A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
 		D6D8DC0A1E8AE1F63916B0C514B9E055 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
-		DC08882374628AECB4D390DAC6F127FB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
-		E1654B2BE07FDBD3FCCA610D93174926 /* QRCodeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 40129514721E84946F96384AF8B3DEAA /* QRCodeReader.m */; };
-		F2EB09DCA38FA590D9215CE48E0045A7 /* QRToggleTorchButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B53AAAD617F66D0902754431016D7B48 /* QRToggleTorchButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3F3EE5C5197842BA9F848AE7EC3B6EA2 /* PBXContainerItemProxy */ = {
+		924CD894899D4DE340B23CD6F338B1C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B82ABBA23AAE4071686DA15505D0B0F;
+			remoteGlobalIDString = FA9420D9B9C1AB46E4FA5D26BB4DBC11;
+			remoteInfo = "QR-Code-Encoder-for-Objective-C";
+		};
+		F70EE95EEEB8252F50B86034A7B887B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4A380476B385FB3A50F2A5A91328FF90;
 			remoteInfo = QRCodeReaderViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00D1ED51B0DA8756BCC0B2B2F09FA34F /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
-		0251842DBBA4D4BCB64B7A11124E3263 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		034D17CE85A94889F666B26DD269CB39 /* Pods-FOMOUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FOMOUITests-dummy.m"; sourceTree = "<group>"; };
+		0C684A2E90D9D25B3CD2E561C25451EA /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
+		0D50326655A3B26254BC40EB6B0D4CA8 /* DataMatrix.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = DataMatrix.mm; path = QRCodeEncoderObjectiveCAtGithub/DataMatrix.mm; sourceTree = "<group>"; };
 		171C37897422DD853143FF018777BC58 /* Pods-FOMO-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FOMO-acknowledgements.markdown"; sourceTree = "<group>"; };
+		19C49E0DDBE6D7FD5658C8C4DE5C3C73 /* QR_Encode.cpp */ = {isa = PBXFileReference; includeInIndex = 1; name = QR_Encode.cpp; path = QRCodeEncoderObjectiveCAtGithub/QR_Encode.cpp; sourceTree = "<group>"; };
 		1AA9D7BC53CA25464350ACBF8632866A /* Pods-FOMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMOTests.release.xcconfig"; sourceTree = "<group>"; };
 		1BA468FADB1EAB6C7B020A8B72992870 /* Pods-FOMO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FOMO-dummy.m"; sourceTree = "<group>"; };
+		1C32F44FCC829D97DD9ABDF58439D44B /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
+		1D173BEAF8F0D19B6866421FB90B629A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		25E8BB12506A8C40AD09216D44CE0254 /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
 		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		29B1645272743B07DA998E78063614D3 /* Pods-FOMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMOTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29C49F26A82868ECB37B14A2CE9579E7 /* libPods-FOMOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMOUITests.a"; path = "libPods-FOMOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DACA921619B759D57DE5A81B3A96FF5 /* Pods-FOMOTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMOTests-frameworks.sh"; sourceTree = "<group>"; };
-		2E3240BD5FE196985D87DA17B961556F /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
-		30AD4CD0D513C0C37AD7B099BE450F4E /* libPods-FOMOUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMOUITests.a"; path = "libPods-FOMOUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A7D6B15E2D4DE737C6A7B981614607 /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
 		36F6D5595C7EF5485819946B3CE932BE /* Pods-FOMO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMO.debug.xcconfig"; sourceTree = "<group>"; };
 		38F662F8F8929B5ED1850C1DA1823888 /* Pods-FOMOUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMOUITests-resources.sh"; sourceTree = "<group>"; };
-		40129514721E84946F96384AF8B3DEAA /* QRCodeReader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReader.m; path = QRCodeReaderViewController/QRCodeReader.m; sourceTree = "<group>"; };
+		3E88E1F38C4B057B629A7A7341F109F7 /* GoogleMapsCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsCore.framework; path = Maps/Frameworks/GoogleMapsCore.framework; sourceTree = "<group>"; };
 		46E3AF549129CFAED31E3B72C359C900 /* Pods-FOMOTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FOMOTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F43B46AF01E190DC345A65D447108D5 /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
-		543038AFAA003646A55D2DBED66A7780 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
-		56025FD295D0C17689BC8542E55B2ED0 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		4E5026F9F833B82DCEF1171E13D0282E /* QR-Code-Encoder-for-Objective-C-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QR-Code-Encoder-for-Objective-C-prefix.pch"; sourceTree = "<group>"; };
+		5397046A1775DDB592DEFB634B546BB3 /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		554E9023E17C45146EA00DE936C24049 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
 		56AEA58C9E3A75567C77D49B727905EC /* Pods-FOMOUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FOMOUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5DB462ACDED9C424D32C38A188F91A90 /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
-		6D5CC51765633EC6F948F7EDE200BD13 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
-		76718843D5E399D3E8CE4E4E7574366E /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		597A4C27AB4CAC37CB5598BF8BE7C8D4 /* GoogleMapsBase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMapsBase.framework; path = Base/Frameworks/GoogleMapsBase.framework; sourceTree = "<group>"; };
+		6E68DD645380BE17A438F7F6959C29EB /* QRCodeReaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderView.m; path = QRCodeReaderViewController/QRCodeReaderView.m; sourceTree = "<group>"; };
+		6F5C054E89F0B9025F91A7594E0F920A /* libQRCodeReaderViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQRCodeReaderViewController.a; path = libQRCodeReaderViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A340378876C4BAE81070D61AFC67138 /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
 		7AC0DA76B50A215E19CADD4E3C3272A4 /* Pods-FOMO-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMO-resources.sh"; sourceTree = "<group>"; };
 		7D176BD8643428497572EDB44A034152 /* Pods-FOMOTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FOMOTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		7D4E1D6DFAC3D0BD1C5002D9A3836105 /* Pods-FOMO-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FOMO-acknowledgements.plist"; sourceTree = "<group>"; };
 		7D91C0362B132894A1338B48A4584671 /* Pods-FOMOUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FOMOUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7DDC14651F13A3F0756A6825250E378B /* Pods-FOMOTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMOTests-resources.sh"; sourceTree = "<group>"; };
 		7FE534A3FFC3E900C7B55259BE37C76A /* Pods-FOMOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMOUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		803B360EC7BC79D1354FE957EBD5EF08 /* libQR-Code-Encoder-for-Objective-C.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libQR-Code-Encoder-for-Objective-C.a"; path = "libQR-Code-Encoder-for-Objective-C.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8389F223932CE5DE47DA8FFDD18EC05C /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
 		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		85710860DA64239C75B5B206B03BA3A3 /* Pods-FOMOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMOUITests.release.xcconfig"; sourceTree = "<group>"; };
 		878BBEA10709750347FFA109A37AF302 /* Pods-FOMOTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FOMOTests-dummy.m"; sourceTree = "<group>"; };
-		8C2969DA47005ACCBF6E8007EA754338 /* libPods-FOMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMOTests.a"; path = "libPods-FOMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F7E8F11036629307410DDA6F71D64BE /* QRCodeReaderViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderViewController.h; path = QRCodeReaderViewController/QRCodeReaderViewController.h; sourceTree = "<group>"; };
+		8F08F77B3E31EB4DAF93C27000E63392 /* QRCodeReader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReader.h; path = QRCodeReaderViewController/QRCodeReader.h; sourceTree = "<group>"; };
+		91B8E7890ACEA9FF92755A552C937A72 /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93D6B4E043FE4119EE888420B61D6C8E /* Pods-FOMO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FOMO.release.xcconfig"; sourceTree = "<group>"; };
-		96B2CC27794E4E17CA7716E21A492C1A /* libQRCodeReaderViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libQRCodeReaderViewController.a; path = libQRCodeReaderViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		971663AF216D216A73FA8BB78A758658 /* QRCodeReaderViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "QRCodeReaderViewController-prefix.pch"; sourceTree = "<group>"; };
-		9C67F103E39428F0145B2547FBAE9A83 /* QRCodeReaderDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderDelegate.h; path = QRCodeReaderViewController/QRCodeReaderDelegate.h; sourceTree = "<group>"; };
-		AF863AF607B77E8E2079CFAE1BB17509 /* QRCodeReaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCodeReaderView.h; path = QRCodeReaderViewController/QRCodeReaderView.h; sourceTree = "<group>"; };
-		B53AAAD617F66D0902754431016D7B48 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
+		A584B3CB6C3E3EA28AC25D0EB89064A8 /* GooglePlaces.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GooglePlaces.framework; path = Frameworks/GooglePlaces.framework; sourceTree = "<group>"; };
+		ACC9CDC3E07C9184B3B8A99D7C9124CB /* QR-Code-Encoder-for-Objective-C-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QR-Code-Encoder-for-Objective-C-dummy.m"; sourceTree = "<group>"; };
+		AFF5FBEA31681968919688881DAAE370 /* QRCodeReaderViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = QRCodeReaderViewController.xcconfig; sourceTree = "<group>"; };
+		B1503E07BE0C13A3DCF49444B5727270 /* libPods-FOMOTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMOTests.a"; path = "libPods-FOMOTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B24A23778B68A40288A10D1AA4235822 /* QRToggleTorchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRToggleTorchButton.m; path = QRCodeReaderViewController/QRToggleTorchButton.m; sourceTree = "<group>"; };
+		BEAF424338C872FC87D7DB61C173569E /* QRCodeReaderViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCodeReaderViewController.m; path = QRCodeReaderViewController/QRCodeReaderViewController.m; sourceTree = "<group>"; };
+		BEB6D7969B7A27D957E1CF15D8E697FA /* QREncoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QREncoder.h; path = QRCodeEncoderObjectiveCAtGithub/QREncoder.h; sourceTree = "<group>"; };
+		C0817A7C2E7CEF521D3341AC6DC5BC04 /* QR_Encode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QR_Encode.h; path = QRCodeEncoderObjectiveCAtGithub/QR_Encode.h; sourceTree = "<group>"; };
+		C66661A6D65D7D217909E53A57074687 /* DataMatrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DataMatrix.h; path = QRCodeEncoderObjectiveCAtGithub/DataMatrix.h; sourceTree = "<group>"; };
 		C6AD1CFF20CC2504DD6AF4B1357C5821 /* Pods-FOMO-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMO-frameworks.sh"; sourceTree = "<group>"; };
-		C8EEAB568A5DA429C5A0FB69F4A7B48B /* QRCameraSwitchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRCameraSwitchButton.h; path = QRCodeReaderViewController/QRCameraSwitchButton.h; sourceTree = "<group>"; };
-		CD8974900D612A8D34D9CFFC93F90C4C /* QRCodeReaderViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "QRCodeReaderViewController-dummy.m"; sourceTree = "<group>"; };
-		CDA31312A588CDFB03C8F3C7A8DE5CE3 /* QRToggleTorchButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = QRToggleTorchButton.h; path = QRCodeReaderViewController/QRToggleTorchButton.h; sourceTree = "<group>"; };
+		CACF8EF5D1D19872865529697B7EDC5B /* QR-Code-Encoder-for-Objective-C.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "QR-Code-Encoder-for-Objective-C.xcconfig"; sourceTree = "<group>"; };
+		CD03E47FEE7876ECAC16FCC6908BEFB9 /* libPods-FOMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMO.a"; path = "libPods-FOMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D01E93CEBA62A3B4BB72EC28307731EC /* Pods-FOMOUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FOMOUITests-frameworks.sh"; sourceTree = "<group>"; };
-		D68334297E7E64F3FA9B1C1C59EC38DE /* GooglePlaces.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle; sourceTree = "<group>"; };
-		DA9A2E8B7F022813689B5B91B9CD8208 /* libPods-FOMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-FOMO.a"; path = "libPods-FOMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5919126D19F002FB998DD39D81A48BC /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		DA5DDB6C171BC943E2A100B4CCCCD5D1 /* QRCameraSwitchButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QRCameraSwitchButton.m; path = QRCodeReaderViewController/QRCameraSwitchButton.m; sourceTree = "<group>"; };
+		E2ACE099D80DDE815133DA419A49B438 /* GoogleMaps.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle; sourceTree = "<group>"; };
+		EA6C139E55F464CA6FCB66CD2EA9A9B9 /* QREncoder.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = QREncoder.mm; path = QRCodeEncoderObjectiveCAtGithub/QREncoder.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,20 +124,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A285548CB17991A10CB8DC98F274BE05 /* Frameworks */ = {
+		9631B506EE5552A6C4A92B57827B938F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54DB5BD2C32F0C9E6E3A1BA695154178 /* Foundation.framework in Frameworks */,
+				BE1B14530CA98B8057977507BF91235A /* AVFoundation.framework in Frameworks */,
+				A0C91EBFCE7C4C67338521941BD148EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B1F456E9AD20DEDBB959D3AF657E0E18 /* Frameworks */ = {
+		B6AB5929534090F0B05C9D7964CCC9FF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC08882374628AECB4D390DAC6F127FB /* AVFoundation.framework in Frameworks */,
-				BDC0046D8E638707062AF27D955CB6E4 /* Foundation.framework in Frameworks */,
+				86B53132881A76DF13A60B39954966D2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,15 +149,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FFE1815E7B7204F7BC7B4E758D882250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9686D99FE339459E74A4D53A8DEE5965 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		24699DF189D766D02A8974C99AE732B5 /* Base */ = {
+		1922743AD1D9A86D13363361F7906D76 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8D571ED21A5F40B640EF749EBA5A9872 /* Frameworks */,
+				597A4C27AB4CAC37CB5598BF8BE7C8D4 /* GoogleMapsBase.framework */,
 			);
-			name = Base;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -143,31 +176,32 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		58B3BE444D1074C518DFFDCE11B597FD /* Resources */ = {
+		43E9D4F15094BA10F9A20737B6D11070 /* Maps */ = {
 			isa = PBXGroup;
 			children = (
-				D68334297E7E64F3FA9B1C1C59EC38DE /* GooglePlaces.bundle */,
+				882EC94697B57B0C862C4EDF699FD14A /* Frameworks */,
+				9CC8500EA1141CE17FC1D63127CC4F42 /* Resources */,
 			);
-			name = Resources;
+			name = Maps;
 			sourceTree = "<group>";
 		};
-		5F75DBBDEBD247AF96EB1609AD382433 /* Frameworks */ = {
+		5DAB6F291364ECF3C999BA3154A36161 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6D5CC51765633EC6F948F7EDE200BD13 /* GooglePlaces.framework */,
+				9EED4D44D0E40BDDF22880F51F57379C /* GoogleMaps */,
+				A196F533D98EC87B96D89812A8A57EBD /* GooglePlaces */,
+				A5B605D7B47E1028347390B0516D0B7B /* QR-Code-Encoder-for-Objective-C */,
+				A8A67D9DD6FC590652DB8AA5176733FA /* QRCodeReaderViewController */,
 			);
-			name = Frameworks;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		7A4AC91C1367D893C7D64121EAECB751 /* Support Files */ = {
+		5F80B7AEF8BF8C0892216CF33B1C9FAB /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2E3240BD5FE196985D87DA17B961556F /* QRCodeReaderViewController.xcconfig */,
-				CD8974900D612A8D34D9CFFC93F90C4C /* QRCodeReaderViewController-dummy.m */,
-				971663AF216D216A73FA8BB78A758658 /* QRCodeReaderViewController-prefix.pch */,
+				1922743AD1D9A86D13363361F7906D76 /* Frameworks */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/QRCodeReaderViewController";
+			name = Base;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -175,8 +209,8 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				CF02C9745B577357E990FAC31655198C /* Pods */,
-				E82FDDE79526C7E550AE2CF47ADBCDB7 /* Products */,
+				5DAB6F291364ECF3C999BA3154A36161 /* Pods */,
+				CDB42A2AEB19B4BD055FFF6562C00EF1 /* Products */,
 				E6C0AE6166C11BF225ABD1E9E0010DEB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -196,12 +230,84 @@
 			path = "Target Support Files/Pods-FOMOTests";
 			sourceTree = "<group>";
 		};
-		8D571ED21A5F40B640EF749EBA5A9872 /* Frameworks */ = {
+		882EC94697B57B0C862C4EDF699FD14A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				00D1ED51B0DA8756BCC0B2B2F09FA34F /* GoogleMapsBase.framework */,
+				1D173BEAF8F0D19B6866421FB90B629A /* GoogleMaps.framework */,
+				3E88E1F38C4B057B629A7A7341F109F7 /* GoogleMapsCore.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AC5D2BF29F0052A7CA2562CD9B6E13D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25E8BB12506A8C40AD09216D44CE0254 /* GooglePlaces.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9CC8500EA1141CE17FC1D63127CC4F42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E2ACE099D80DDE815133DA419A49B438 /* GoogleMaps.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9EED4D44D0E40BDDF22880F51F57379C /* GoogleMaps */ = {
+			isa = PBXGroup;
+			children = (
+				5F80B7AEF8BF8C0892216CF33B1C9FAB /* Base */,
+				43E9D4F15094BA10F9A20737B6D11070 /* Maps */,
+			);
+			name = GoogleMaps;
+			path = GoogleMaps;
+			sourceTree = "<group>";
+		};
+		A196F533D98EC87B96D89812A8A57EBD /* GooglePlaces */ = {
+			isa = PBXGroup;
+			children = (
+				AD0170FB9F0A5DBCB9095DE3EF652C35 /* Frameworks */,
+				8AC5D2BF29F0052A7CA2562CD9B6E13D /* Resources */,
+			);
+			name = GooglePlaces;
+			path = GooglePlaces;
+			sourceTree = "<group>";
+		};
+		A5B605D7B47E1028347390B0516D0B7B /* QR-Code-Encoder-for-Objective-C */ = {
+			isa = PBXGroup;
+			children = (
+				C66661A6D65D7D217909E53A57074687 /* DataMatrix.h */,
+				0D50326655A3B26254BC40EB6B0D4CA8 /* DataMatrix.mm */,
+				19C49E0DDBE6D7FD5658C8C4DE5C3C73 /* QR_Encode.cpp */,
+				C0817A7C2E7CEF521D3341AC6DC5BC04 /* QR_Encode.h */,
+				BEB6D7969B7A27D957E1CF15D8E697FA /* QREncoder.h */,
+				EA6C139E55F464CA6FCB66CD2EA9A9B9 /* QREncoder.mm */,
+				DABB520D7322A21097D17BF2A5961755 /* Support Files */,
+			);
+			name = "QR-Code-Encoder-for-Objective-C";
+			path = "QR-Code-Encoder-for-Objective-C";
+			sourceTree = "<group>";
+		};
+		A8A67D9DD6FC590652DB8AA5176733FA /* QRCodeReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				91B8E7890ACEA9FF92755A552C937A72 /* QRCameraSwitchButton.h */,
+				DA5DDB6C171BC943E2A100B4CCCCD5D1 /* QRCameraSwitchButton.m */,
+				8F08F77B3E31EB4DAF93C27000E63392 /* QRCodeReader.h */,
+				36A7D6B15E2D4DE737C6A7B981614607 /* QRCodeReader.m */,
+				554E9023E17C45146EA00DE936C24049 /* QRCodeReaderDelegate.h */,
+				7A340378876C4BAE81070D61AFC67138 /* QRCodeReaderView.h */,
+				6E68DD645380BE17A438F7F6959C29EB /* QRCodeReaderView.m */,
+				5397046A1775DDB592DEFB634B546BB3 /* QRCodeReaderViewController.h */,
+				BEAF424338C872FC87D7DB61C173569E /* QRCodeReaderViewController.m */,
+				0C684A2E90D9D25B3CD2E561C25451EA /* QRToggleTorchButton.h */,
+				B24A23778B68A40288A10D1AA4235822 /* QRToggleTorchButton.m */,
+				CA76E89239B7C87EF1DDF43B322AADBE /* Support Files */,
+			);
+			name = QRCodeReaderViewController;
+			path = QRCodeReaderViewController;
 			sourceTree = "<group>";
 		};
 		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
@@ -211,6 +317,14 @@
 				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		AD0170FB9F0A5DBCB9095DE3EF652C35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A584B3CB6C3E3EA28AC25D0EB89064A8 /* GooglePlaces.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B7020CDEF26CF9184E6DD91559F4256E /* Pods-FOMO */ = {
@@ -228,62 +342,38 @@
 			path = "Target Support Files/Pods-FOMO";
 			sourceTree = "<group>";
 		};
-		BBDF541E24C5CCDDE407FEA75876DE0A /* QRCodeReaderViewController */ = {
+		CA76E89239B7C87EF1DDF43B322AADBE /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C8EEAB568A5DA429C5A0FB69F4A7B48B /* QRCameraSwitchButton.h */,
-				56025FD295D0C17689BC8542E55B2ED0 /* QRCameraSwitchButton.m */,
-				4F43B46AF01E190DC345A65D447108D5 /* QRCodeReader.h */,
-				40129514721E84946F96384AF8B3DEAA /* QRCodeReader.m */,
-				9C67F103E39428F0145B2547FBAE9A83 /* QRCodeReaderDelegate.h */,
-				AF863AF607B77E8E2079CFAE1BB17509 /* QRCodeReaderView.h */,
-				5DB462ACDED9C424D32C38A188F91A90 /* QRCodeReaderView.m */,
-				8F7E8F11036629307410DDA6F71D64BE /* QRCodeReaderViewController.h */,
-				76718843D5E399D3E8CE4E4E7574366E /* QRCodeReaderViewController.m */,
-				CDA31312A588CDFB03C8F3C7A8DE5CE3 /* QRToggleTorchButton.h */,
-				B53AAAD617F66D0902754431016D7B48 /* QRToggleTorchButton.m */,
-				7A4AC91C1367D893C7D64121EAECB751 /* Support Files */,
+				AFF5FBEA31681968919688881DAAE370 /* QRCodeReaderViewController.xcconfig */,
+				8389F223932CE5DE47DA8FFDD18EC05C /* QRCodeReaderViewController-dummy.m */,
+				1C32F44FCC829D97DD9ABDF58439D44B /* QRCodeReaderViewController-prefix.pch */,
 			);
-			name = QRCodeReaderViewController;
-			path = QRCodeReaderViewController;
+			name = "Support Files";
+			path = "../Target Support Files/QRCodeReaderViewController";
 			sourceTree = "<group>";
 		};
-		CDE0C2A253CF147DAD85B4725B4BB387 /* Maps */ = {
+		CDB42A2AEB19B4BD055FFF6562C00EF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D9C37AF9749E7565F9C7E4878C48B4FB /* Frameworks */,
-				FDA3D0F1C76AD5FE54984E01993934A3 /* Resources */,
+				CD03E47FEE7876ECAC16FCC6908BEFB9 /* libPods-FOMO.a */,
+				B1503E07BE0C13A3DCF49444B5727270 /* libPods-FOMOTests.a */,
+				29C49F26A82868ECB37B14A2CE9579E7 /* libPods-FOMOUITests.a */,
+				803B360EC7BC79D1354FE957EBD5EF08 /* libQR-Code-Encoder-for-Objective-C.a */,
+				6F5C054E89F0B9025F91A7594E0F920A /* libQRCodeReaderViewController.a */,
 			);
-			name = Maps;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		CF02C9745B577357E990FAC31655198C /* Pods */ = {
+		DABB520D7322A21097D17BF2A5961755 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				DE704E0BA1301BFCE1601B3582B1560A /* GoogleMaps */,
-				FA8A09550E503BEADA828429294F3F17 /* GooglePlaces */,
-				BBDF541E24C5CCDDE407FEA75876DE0A /* QRCodeReaderViewController */,
+				CACF8EF5D1D19872865529697B7EDC5B /* QR-Code-Encoder-for-Objective-C.xcconfig */,
+				ACC9CDC3E07C9184B3B8A99D7C9124CB /* QR-Code-Encoder-for-Objective-C-dummy.m */,
+				4E5026F9F833B82DCEF1171E13D0282E /* QR-Code-Encoder-for-Objective-C-prefix.pch */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D9C37AF9749E7565F9C7E4878C48B4FB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				543038AFAA003646A55D2DBED66A7780 /* GoogleMaps.framework */,
-				0251842DBBA4D4BCB64B7A11124E3263 /* GoogleMapsCore.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DE704E0BA1301BFCE1601B3582B1560A /* GoogleMaps */ = {
-			isa = PBXGroup;
-			children = (
-				24699DF189D766D02A8974C99AE732B5 /* Base */,
-				CDE0C2A253CF147DAD85B4725B4BB387 /* Maps */,
-			);
-			name = GoogleMaps;
-			path = GoogleMaps;
+			name = "Support Files";
+			path = "../Target Support Files/QR-Code-Encoder-for-Objective-C";
 			sourceTree = "<group>";
 		};
 		E5BD96C72072ADBF21DB81A83BDB4AC0 /* Pods-FOMOUITests */ = {
@@ -311,48 +401,29 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		E82FDDE79526C7E550AE2CF47ADBCDB7 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				DA9A2E8B7F022813689B5B91B9CD8208 /* libPods-FOMO.a */,
-				8C2969DA47005ACCBF6E8007EA754338 /* libPods-FOMOTests.a */,
-				30AD4CD0D513C0C37AD7B099BE450F4E /* libPods-FOMOUITests.a */,
-				96B2CC27794E4E17CA7716E21A492C1A /* libQRCodeReaderViewController.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		FA8A09550E503BEADA828429294F3F17 /* GooglePlaces */ = {
-			isa = PBXGroup;
-			children = (
-				5F75DBBDEBD247AF96EB1609AD382433 /* Frameworks */,
-				58B3BE444D1074C518DFFDCE11B597FD /* Resources */,
-			);
-			name = GooglePlaces;
-			path = GooglePlaces;
-			sourceTree = "<group>";
-		};
-		FDA3D0F1C76AD5FE54984E01993934A3 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E5919126D19F002FB998DD39D81A48BC /* GoogleMaps.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		43391AE99C189FB3AF765F5C24C6DCE6 /* Headers */ = {
+		7551B7D7B0EF0195253CBD04BCF41F93 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5B910157EEB70EBA68126E3A3BA074F /* QRCameraSwitchButton.h in Headers */,
-				C2D2B9F26157646B38E4EA36998BE19A /* QRCodeReader.h in Headers */,
-				400A25EF0D50F30F4906A2998CFEF3FC /* QRCodeReaderDelegate.h in Headers */,
-				6F35E51ADF69B4BCAC10057A93C1CB01 /* QRCodeReaderView.h in Headers */,
-				6BA310446F58C11D7B86496D749F3397 /* QRCodeReaderViewController.h in Headers */,
-				5A6E42831C6218C2D7F098FD20568B78 /* QRToggleTorchButton.h in Headers */,
+				9F2BE03CDF5C4B5CC58B7C7AAADE94A3 /* QRCameraSwitchButton.h in Headers */,
+				6B43DA397A47B3E07C1B71FC9DCC7634 /* QRCodeReader.h in Headers */,
+				BAF9DDF4EF5324A866A65CEEDCBC25EC /* QRCodeReaderDelegate.h in Headers */,
+				A856FFC0B3EE7102F03470C1F62DD1EB /* QRCodeReaderView.h in Headers */,
+				6265779ED6A4AD4455664D8C4DA97415 /* QRCodeReaderViewController.h in Headers */,
+				5E5129F3FBC0B7EE408B0508304D8C5D /* QRToggleTorchButton.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C34362143CB146A3A7D436C3EDBA28 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA87370AFBC5AAF4646ABDB168621F2A /* DataMatrix.h in Headers */,
+				542EDFDB4AFBAA77D58D08657131751F /* QR_Encode.h in Headers */,
+				5268D919C2074137169A71A120DA4617 /* QREncoder.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +443,42 @@
 			);
 			name = "Pods-FOMOUITests";
 			productName = "Pods-FOMOUITests";
-			productReference = 30AD4CD0D513C0C37AD7B099BE450F4E /* libPods-FOMOUITests.a */;
+			productReference = 29C49F26A82868ECB37B14A2CE9579E7 /* libPods-FOMOUITests.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		4A380476B385FB3A50F2A5A91328FF90 /* QRCodeReaderViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8250E3C7616F5C9607891C664C935797 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
+			buildPhases = (
+				8C3ADE689F8916B099A3AC64E09B1C2A /* Sources */,
+				9631B506EE5552A6C4A92B57827B938F /* Frameworks */,
+				7551B7D7B0EF0195253CBD04BCF41F93 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCodeReaderViewController;
+			productName = QRCodeReaderViewController;
+			productReference = 6F5C054E89F0B9025F91A7594E0F920A /* libQRCodeReaderViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		51D38B33BDBB14CD12ACF8C0B559D306 /* Pods-FOMO */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 550DF9BCA6727368C21F84CB1A865DB2 /* Build configuration list for PBXNativeTarget "Pods-FOMO" */;
+			buildPhases = (
+				BC009E0B47B79AFC80270E0E9C884EC6 /* Sources */,
+				B6AB5929534090F0B05C9D7964CCC9FF /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9FA4576257E4DE4395CF942181A889C2 /* PBXTargetDependency */,
+				0D382BAAAFCCB18BDFC3356BD02D5B5F /* PBXTargetDependency */,
+			);
+			name = "Pods-FOMO";
+			productName = "Pods-FOMO";
+			productReference = CD03E47FEE7876ECAC16FCC6908BEFB9 /* libPods-FOMO.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		7E900E5101AF239820B386A2DC4AEF24 /* Pods-FOMOTests */ = {
@@ -388,41 +494,24 @@
 			);
 			name = "Pods-FOMOTests";
 			productName = "Pods-FOMOTests";
-			productReference = 8C2969DA47005ACCBF6E8007EA754338 /* libPods-FOMOTests.a */;
+			productReference = B1503E07BE0C13A3DCF49444B5727270 /* libPods-FOMOTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		84B91547FB997078F5247D93796744C7 /* Pods-FOMO */ = {
+		FA9420D9B9C1AB46E4FA5D26BB4DBC11 /* QR-Code-Encoder-for-Objective-C */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE94C59B5A9B356D2A0BFEEC1657C1F2 /* Build configuration list for PBXNativeTarget "Pods-FOMO" */;
+			buildConfigurationList = 6910EF25B339378997D6BF03AFC0FF16 /* Build configuration list for PBXNativeTarget "QR-Code-Encoder-for-Objective-C" */;
 			buildPhases = (
-				B5D0197C3C0BF3EBE90AB231056A59C7 /* Sources */,
-				A285548CB17991A10CB8DC98F274BE05 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8865991D733BD2D5F0C1A451E3DDCBDB /* PBXTargetDependency */,
-			);
-			name = "Pods-FOMO";
-			productName = "Pods-FOMO";
-			productReference = DA9A2E8B7F022813689B5B91B9CD8208 /* libPods-FOMO.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		8B82ABBA23AAE4071686DA15505D0B0F /* QRCodeReaderViewController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 62B947DE426FEC2EAF2B59934DD6975E /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */;
-			buildPhases = (
-				FD3FD47BAC30C3C54403B865D00C8FF1 /* Sources */,
-				B1F456E9AD20DEDBB959D3AF657E0E18 /* Frameworks */,
-				43391AE99C189FB3AF765F5C24C6DCE6 /* Headers */,
+				C42109F802F40064E8E3EC6134C65022 /* Sources */,
+				FFE1815E7B7204F7BC7B4E758D882250 /* Frameworks */,
+				F7C34362143CB146A3A7D436C3EDBA28 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = QRCodeReaderViewController;
-			productName = QRCodeReaderViewController;
-			productReference = 96B2CC27794E4E17CA7716E21A492C1A /* libQRCodeReaderViewController.a */;
+			name = "QR-Code-Encoder-for-Objective-C";
+			productName = "QR-Code-Encoder-for-Objective-C";
+			productReference = 803B360EC7BC79D1354FE957EBD5EF08 /* libQR-Code-Encoder-for-Objective-C.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -442,14 +531,15 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = E82FDDE79526C7E550AE2CF47ADBCDB7 /* Products */;
+			productRefGroup = CDB42A2AEB19B4BD055FFF6562C00EF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				84B91547FB997078F5247D93796744C7 /* Pods-FOMO */,
+				51D38B33BDBB14CD12ACF8C0B559D306 /* Pods-FOMO */,
 				7E900E5101AF239820B386A2DC4AEF24 /* Pods-FOMOTests */,
 				1E944E78A5DDF43691BC373F616EC5D3 /* Pods-FOMOUITests */,
-				8B82ABBA23AAE4071686DA15505D0B0F /* QRCodeReaderViewController */,
+				FA9420D9B9C1AB46E4FA5D26BB4DBC11 /* QR-Code-Encoder-for-Objective-C */,
+				4A380476B385FB3A50F2A5A91328FF90 /* QRCodeReaderViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -463,6 +553,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8C3ADE689F8916B099A3AC64E09B1C2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEA74E16B7F8F03650C7F92EF65F3C6 /* QRCameraSwitchButton.m in Sources */,
+				740047C39D8E1BF1E148C3D9A62FC0EE /* QRCodeReader.m in Sources */,
+				B13415675109A16E831A982EB44C517C /* QRCodeReaderView.m in Sources */,
+				161104CAECAF895703825EDB236B5F75 /* QRCodeReaderViewController-dummy.m in Sources */,
+				7C2289E719F22A85FC3B3DAC55DCC60B /* QRCodeReaderViewController.m in Sources */,
+				45DE53F2703F8262611347771BB96CCA /* QRToggleTorchButton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ADAAFC51E27F3D77C1E861C2B7D3842E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -471,35 +574,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5D0197C3C0BF3EBE90AB231056A59C7 /* Sources */ = {
+		BC009E0B47B79AFC80270E0E9C884EC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77D77C04F8FB66F06E3B41489D13A277 /* Pods-FOMO-dummy.m in Sources */,
+				033AE871556F8358A47739369A028BBE /* Pods-FOMO-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FD3FD47BAC30C3C54403B865D00C8FF1 /* Sources */ = {
+		C42109F802F40064E8E3EC6134C65022 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80981451E341BB4654667FB2911917C7 /* QRCameraSwitchButton.m in Sources */,
-				E1654B2BE07FDBD3FCCA610D93174926 /* QRCodeReader.m in Sources */,
-				AB729E09C8D235D1E09D0C3DCAA9D620 /* QRCodeReaderView.m in Sources */,
-				2D2CBF2608C8ABAA0A691A34BFE9F31E /* QRCodeReaderViewController-dummy.m in Sources */,
-				336480866F7DE81898D2EA9897DB87D3 /* QRCodeReaderViewController.m in Sources */,
-				F2EB09DCA38FA590D9215CE48E0045A7 /* QRToggleTorchButton.m in Sources */,
+				9443D789692955768F190A37DA29B515 /* DataMatrix.mm in Sources */,
+				8146EDECD89186649F30F2E978858D89 /* QR-Code-Encoder-for-Objective-C-dummy.m in Sources */,
+				869E54C62BCFC53D70206B0CC5D2FD82 /* QR_Encode.cpp in Sources */,
+				587A17AF8EDBF86E3A530770400A4BF1 /* QREncoder.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8865991D733BD2D5F0C1A451E3DDCBDB /* PBXTargetDependency */ = {
+		0D382BAAAFCCB18BDFC3356BD02D5B5F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = QRCodeReaderViewController;
-			target = 8B82ABBA23AAE4071686DA15505D0B0F /* QRCodeReaderViewController */;
-			targetProxy = 3F3EE5C5197842BA9F848AE7EC3B6EA2 /* PBXContainerItemProxy */;
+			target = 4A380476B385FB3A50F2A5A91328FF90 /* QRCodeReaderViewController */;
+			targetProxy = F70EE95EEEB8252F50B86034A7B887B2 /* PBXContainerItemProxy */;
+		};
+		9FA4576257E4DE4395CF942181A889C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "QR-Code-Encoder-for-Objective-C";
+			target = FA9420D9B9C1AB46E4FA5D26BB4DBC11 /* QR-Code-Encoder-for-Objective-C */;
+			targetProxy = 924CD894899D4DE340B23CD6F338B1C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -579,9 +686,9 @@
 			};
 			name = Release;
 		};
-		56321D12A67E2AC49B733FA5F625ABC1 /* Debug */ = {
+		2D6F6C7B187E9569E554005C58DB4CDC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E3240BD5FE196985D87DA17B961556F /* QRCodeReaderViewController.xcconfig */;
+			baseConfigurationReference = AFF5FBEA31681968919688881DAAE370 /* QRCodeReaderViewController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -600,27 +707,25 @@
 			};
 			name = Debug;
 		};
-		575F6F4EE31D627CA79038F6E78D0BFD /* Release */ = {
+		3CEB1E91AAC5677B1F7224EBF4AF61B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E3240BD5FE196985D87DA17B961556F /* QRCodeReaderViewController.xcconfig */;
+			baseConfigurationReference = 36F6D5595C7EF5485819946B3CE932BE /* Pods-FOMO.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		59F0302F2371FCC6B73EF0A418D40734 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -682,26 +787,6 @@
 			};
 			name = Debug;
 		};
-		641D88AAE2C3CA6E653F363CCF4F157A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36F6D5595C7EF5485819946B3CE932BE /* Pods-FOMO.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		6980B9089E45B073FCE9E3F0DDE97693 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 85710860DA64239C75B5B206B03BA3A3 /* Pods-FOMOUITests.release.xcconfig */;
@@ -718,6 +803,70 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		867A146E66674E50769F5F475A50AB20 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D6B4E043FE4119EE888420B61D6C8E /* Pods-FOMO.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		951D859261EF51647488F5A7B784137E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CACF8EF5D1D19872865529697B7EDC5B /* QR-Code-Encoder-for-Objective-C.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/QR-Code-Encoder-for-Objective-C/QR-Code-Encoder-for-Objective-C-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9D07D1B1A905F5639A6C948EC67A53FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF5FBEA31681968919688881DAAE370 /* QRCodeReaderViewController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/QRCodeReaderViewController/QRCodeReaderViewController-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -743,22 +892,23 @@
 			};
 			name = Debug;
 		};
-		BD7DB006A44D285F3FB2808FD4EFF91E /* Release */ = {
+		CD4C2EFD22D1055A1E6A5B3ADE376F93 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 93D6B4E043FE4119EE888420B61D6C8E /* Pods-FOMO.release.xcconfig */;
+			baseConfigurationReference = CACF8EF5D1D19872865529697B7EDC5B /* QR-Code-Encoder-for-Objective-C.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/QR-Code-Encoder-for-Objective-C/QR-Code-Encoder-for-Objective-C-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -815,20 +965,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		62B947DE426FEC2EAF2B59934DD6975E /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+		550DF9BCA6727368C21F84CB1A865DB2 /* Build configuration list for PBXNativeTarget "Pods-FOMO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				56321D12A67E2AC49B733FA5F625ABC1 /* Debug */,
-				575F6F4EE31D627CA79038F6E78D0BFD /* Release */,
+				3CEB1E91AAC5677B1F7224EBF4AF61B0 /* Debug */,
+				867A146E66674E50769F5F475A50AB20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE94C59B5A9B356D2A0BFEEC1657C1F2 /* Build configuration list for PBXNativeTarget "Pods-FOMO" */ = {
+		6910EF25B339378997D6BF03AFC0FF16 /* Build configuration list for PBXNativeTarget "QR-Code-Encoder-for-Objective-C" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				641D88AAE2C3CA6E653F363CCF4F157A /* Debug */,
-				BD7DB006A44D285F3FB2808FD4EFF91E /* Release */,
+				951D859261EF51647488F5A7B784137E /* Debug */,
+				CD4C2EFD22D1055A1E6A5B3ADE376F93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8250E3C7616F5C9607891C664C935797 /* Build configuration list for PBXNativeTarget "QRCodeReaderViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D6F6C7B187E9569E554005C58DB4CDC /* Debug */,
+				9D07D1B1A905F5639A6C948EC67A53FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

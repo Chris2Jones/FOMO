@@ -110,10 +110,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRX-rV-y1I">
-                                <rect key="frame" x="45" y="423" width="286" height="172"/>
+                                <rect key="frame" x="45" y="423" width="286" height="86"/>
                                 <color key="backgroundColor" red="1" green="0.50980392156862742" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="172" id="ZiS-lR-xGN"/>
+                                    <constraint firstAttribute="height" constant="86" id="ZiS-lR-xGN"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
                                 <state key="normal" title="Buy Drinks!">
@@ -121,6 +121,20 @@
                                 </state>
                                 <connections>
                                     <segue destination="bPM-I5-P0m" kind="show" id="2b2-HG-IKm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwI-0Z-Y1I">
+                                <rect key="frame" x="45" y="524" width="286" height="86"/>
+                                <color key="backgroundColor" red="1" green="0.50980392159999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="s39-6L-QOO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="32"/>
+                                <state key="normal" title="Scan Barcodes!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanBarcodeButtonTapped:" destination="9pv-A4-QxB" eventType="touchUpInside" id="Rpq-H8-6cx"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ELx-If-Z1u">
@@ -202,6 +216,7 @@
                             <constraint firstItem="iRX-rV-y1I" firstAttribute="top" secondItem="wRF-0u-Pie" secondAttribute="bottom" constant="20" id="L27-1B-Y64"/>
                             <constraint firstItem="rhj-Lz-GxS" firstAttribute="leading" secondItem="ELx-If-Z1u" secondAttribute="leading" id="NRI-en-bcu"/>
                             <constraint firstItem="wRF-0u-Pie" firstAttribute="trailing" secondItem="ELx-If-Z1u" secondAttribute="trailing" id="OQN-mu-sgv"/>
+                            <constraint firstItem="SwI-0Z-Y1I" firstAttribute="leading" secondItem="iRX-rV-y1I" secondAttribute="leading" id="Qcs-IH-Ww0"/>
                             <constraint firstItem="JSU-Pc-LKQ" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="Tvi-te-A8v"/>
                             <constraint firstItem="wRF-0u-Pie" firstAttribute="centerY" secondItem="8oU-Ub-pRM" secondAttribute="centerY" id="ULq-EY-Mam"/>
                             <constraint firstItem="3TC-L6-2Ud" firstAttribute="leading" secondItem="ELx-If-Z1u" secondAttribute="leading" id="Xji-zh-UMq"/>
@@ -211,11 +226,13 @@
                             <constraint firstItem="Xt6-4b-e5X" firstAttribute="width" secondItem="rhj-Lz-GxS" secondAttribute="width" id="hdr-dk-ACY"/>
                             <constraint firstItem="ELx-If-Z1u" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="iJ7-jd-rGw"/>
                             <constraint firstItem="8oU-Ub-pRM" firstAttribute="top" secondItem="3TC-L6-2Ud" secondAttribute="bottom" constant="25" id="jV0-y3-ng4"/>
+                            <constraint firstItem="SwI-0Z-Y1I" firstAttribute="trailing" secondItem="iRX-rV-y1I" secondAttribute="trailing" id="jli-a5-QaR"/>
                             <constraint firstItem="ELx-If-Z1u" firstAttribute="leading" secondItem="KQZ-1w-vlD" secondAttribute="leading" id="l64-i6-MRX"/>
                             <constraint firstItem="3TC-L6-2Ud" firstAttribute="top" secondItem="rhj-Lz-GxS" secondAttribute="bottom" constant="25" id="mun-sk-DKN"/>
                             <constraint firstItem="ELx-If-Z1u" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="10" id="ovy-9Q-O2B"/>
                             <constraint firstItem="3TC-L6-2Ud" firstAttribute="trailing" secondItem="ELx-If-Z1u" secondAttribute="trailing" id="p2L-Nj-ZxG"/>
                             <constraint firstItem="bUd-3A-Ozc" firstAttribute="top" secondItem="lW7-9Z-Xvj" secondAttribute="bottom" id="q8O-aS-D3n"/>
+                            <constraint firstItem="SwI-0Z-Y1I" firstAttribute="top" secondItem="iRX-rV-y1I" secondAttribute="bottom" constant="15" id="rmM-bZ-EJr"/>
                             <constraint firstItem="Xt6-4b-e5X" firstAttribute="trailing" secondItem="ELx-If-Z1u" secondAttribute="trailing" id="smm-2z-k5K"/>
                             <constraint firstItem="lW7-9Z-Xvj" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="tqQ-Ub-Bee"/>
                             <constraint firstItem="wRF-0u-Pie" firstAttribute="trailing" secondItem="iRX-rV-y1I" secondAttribute="trailing" id="uQf-eL-xrQ"/>
@@ -236,6 +253,7 @@
                         <outlet property="pickerView" destination="jFH-Vx-9r0" id="JpP-tl-B7Z"/>
                         <outlet property="pickerViewClose" destination="P1o-1g-SdK" id="e7z-Tr-dIq"/>
                         <outlet property="pickerViewDone" destination="1B3-WU-nZ7" id="23q-TH-k8B"/>
+                        <outlet property="scanBarcodeButton" destination="SwI-0Z-Y1I" id="lds-7c-vZS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
@@ -629,7 +647,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI4-p6-E9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="-93.103448275862078"/>
+            <point key="canvasLocation" x="828" y="40"/>
         </scene>
     </scenes>
     <resources>

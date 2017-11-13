@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import <QRCodeReader.h>
+#import <QRCodeReaderViewController.h>
 
 @interface HomeViewController ()
 {
@@ -23,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewDone;
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewClose;
 @property (weak, nonatomic) IBOutlet UIButton *buyDrinks;
+@property (weak, nonatomic) IBOutlet UIButton *scanBarcodeButton;
 
 @end
 
@@ -57,6 +60,7 @@
     self.addFundButton.layer.borderColor = [UIColor colorWithRed:255.0/255.0 green:130.0/255.0 blue:0.0/255.0 alpha:1].CGColor;
     self.addFundButton.layer.borderWidth = 1;
     self.buyDrinks.layer.cornerRadius = 5;
+    self.scanBarcodeButton.layer.cornerRadius = 5;
 }
 
 - (void)setupPicker{
@@ -101,6 +105,20 @@
         self.pickerBackgroundView.alpha = 0.0;
     } completion:^(BOOL finished) {
         self.pickerBackgroundView.hidden = YES;
+    }];
+}
+
+- (IBAction)scanBarcodeButtonTapped:(id)sender {
+    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+    
+    QRCodeReaderViewController *viewController = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
+    
+    viewController.modalPresentationStyle = UIModalPresentationFormSheet;
+    
+    viewController.delegate = self;
+    
+    [reader setCompletionWithBlock:^(NSString *resultAsString) {
+        NSLog(@"%@", resultAsString);
     }];
 }
 
