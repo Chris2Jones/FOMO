@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BuyDrinksViewController : UIViewController
+@interface BuyDrinksViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end

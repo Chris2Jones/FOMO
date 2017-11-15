@@ -7,6 +7,8 @@
 //
 
 #import "HomeViewController.h"
+#import <QRCodeReader.h>
+#import <QRCodeReaderViewController.h>
 
 @interface HomeViewController ()
 {
@@ -107,6 +109,24 @@
 }
 
 - (IBAction)scanBarcodeButtonTapped:(id)sender {
+    QRCodeReader *reader = [QRCodeReader readerWithMetadataObjectTypes:@[AVMetadataObjectTypeQRCode]];
+    QRCodeReaderViewController *vc = [QRCodeReaderViewController readerWithCancelButtonTitle:@"Cancel" codeReader:reader startScanningAtLoad:YES showSwitchCameraButton:YES showTorchButton:YES];
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    vc.delegate = self;
+    [self presentViewController:vc animated:YES completion:nil];
+    [reader setCompletionWithBlock:^(NSString *resultAsString) {
+        NSLog(@"%@", resultAsString);
+    }];
+}
+
+- (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result {
+    [self dismissViewControllerAnimated:YES completion:^{
+        NSLog(@"%@", result);
+    }];
+}
+
+- (void)readerDidCancel:(QRCodeReaderViewController *)reader {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 
