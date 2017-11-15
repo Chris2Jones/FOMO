@@ -7,7 +7,7 @@ target 'FOMO' do
 
   # Pods for FOMO
     pod 'QR-Code-Encoder-for-Objective-C'
-    pod 'QRCodeReaderViewController'
+    pod 'QRCodeReaderViewController' , '~> 4.0.2'
     pod 'GoogleMaps'
     pod 'GooglePlaces'
 	

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HomeViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, QRCodeReaderDelegate>
+@interface HomeViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end
 
