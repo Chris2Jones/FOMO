@@ -11,9 +11,7 @@
 #import <QRCodeReaderViewController.h>
 
 @interface HomeViewController ()
-{
-    NSArray *pickerData;
-}
+
 @property (weak, nonatomic) IBOutlet UIView *header;
 @property (weak, nonatomic) IBOutlet UILabel *fundDisplay;
 @property (weak, nonatomic) IBOutlet UIView *fundDisplayView;
@@ -26,6 +24,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewClose;
 @property (weak, nonatomic) IBOutlet UIButton *buyDrinks;
 @property (weak, nonatomic) IBOutlet UIButton *scanBarcodeButton;
+@property (strong) NSArray *pickerData;
 
 @end
 
@@ -68,7 +67,7 @@
     self.pickerBackgroundView.hidden = YES;
     self.pickerBackgroundView.alpha = 0.0;
     self.pickerViewDone.layer.cornerRadius = self.pickerViewDone.bounds.size.height/2;
-    pickerData = @[@"Ale House", @"The Brass", @"The Mansion", @"Clark Hall Pub", @"Queens Pub", @"The Brooklyn"];
+    self.pickerData = @[@"Ale House", @"The Brass", @"The Mansion", @"Clark Hall Pub", @"Queens Pub", @"The Brooklyn"];
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
 }
@@ -99,7 +98,7 @@
 
 - (IBAction)donePickerTapped:(id)sender {
     NSInteger row = [self.pickerView selectedRowInComponent:0];
-    [self.barButton setTitle:[pickerData objectAtIndex:row] forState:UIControlStateNormal];
+    [self.barButton setTitle:[self.pickerData objectAtIndex:row] forState:UIControlStateNormal];
     [UIView animateWithDuration:0.3 animations:^{
         self.pickerBackgroundView.transform = CGAffineTransformMakeTranslation(0, [UIScreen mainScreen].bounds.size.height);
         self.pickerBackgroundView.alpha = 0.0;
@@ -139,19 +138,16 @@
     }];
 }
 
-- (int)numberOfComponentsInPickerView:(UIPickerView *)pickerView
-{
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
     return 1;
 }
 
-- (int)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
-{
-    return pickerData.count;
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return self.pickerData.count;
 }
 
-- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
-{
-    return pickerData[row];
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return self.pickerData[row];
 }
 
 
