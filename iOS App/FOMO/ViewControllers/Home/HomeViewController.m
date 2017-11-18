@@ -32,10 +32,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //[self setupSplashScreen];
     [self setupHeader];
     [self setupFundDisplayView];
     [self setupButtons];
     [self setupPicker];
+}
+
+- (void)setupSplashScreen {
+    UIImageView *splashScreen = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
+    splashScreen.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:splashScreen];
 }
 
 - (void)setupHeader{
@@ -78,6 +85,11 @@
         self.fundDisplayView.backgroundColor = [UIColor grayColor];
         self.lockFundButton.alpha = 0.5;
         self.lockFundButton.enabled = NO;
+        self.addFundButton.alpha = 0.5;
+        self.addFundButton.enabled = NO;
+        self.buyDrinks.alpha = 0.5;
+        self.buyDrinks.enabled = NO;
+        
     }];
     UIAlertAction *cancelButton = [UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
         

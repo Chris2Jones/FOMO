@@ -527,7 +527,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="126" id="Y9x-fN-s8O"/>
                                                 </constraints>
-                                                <state key="normal" title="Button">
+                                                <state key="normal" title="SELECT">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                                 <connections>
@@ -715,7 +715,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cI4-p6-E9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="828" y="40"/>
+            <point key="canvasLocation" x="886" y="0.0"/>
         </scene>
     </scenes>
     <resources>
