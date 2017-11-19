@@ -56,13 +56,13 @@ mongo::BSONObj getDrink(string id){
 }
 
 //Stores user into database returns the id for the db
-string storeUser(string userName, string pswd, string name, cardNo, tab){
+string storeUser(string name,string email,string address,int age,float tab){
 	auto builder = bsoncxx::builder::stream::document{};
 	bsoncxx::document::value doc_value = builder
-	<< "user_name" << userName
-	<< "password" << pswd
 	<< "name" << name
-	<< "card_number" << cardNo
+	<< "email" << email
+	<< "address" << address
+	<< "age" << age
 	<< "tab" << tab
 	<< bsoncxx::builder::stream::close_document
     << bsoncxx::builder::stream::finalize;
@@ -78,26 +78,18 @@ mongo::BSONObj getUser(string id){
 }
 
 //Stores owner into database returns the id for the db
-string storeOwner(string eMail, int location[], accountNo, vector<string> &drinks, vector<string> &transactions){
+string storeOwner(string name, string eMail, string location,  vector<string> &drinks, string transactions){//(string name, string email, string location)
 	auto builder = bsoncxx::builder::stream::document{};
 	bsoncxx::document::value doc_value = builder
+	<< "name" << name
 	<< "e_mail" << eMail
-	<< "location" << bsoncxx::builder::stream::open_array
-	for(i = 0; i<2; i++){
-		<< location[i]
-	}
-	<< close_array
-	<< "account_number" << accountNo
+	<< "location" << location
 	<< "drinks" << bsoncxx::builder::stream::open_array
 	for(i = 0; i<drinks.size(); i++){
 		<<drinks[i]
 	}
 	<< close_array
-	<< "transactions" << bsoncxx::builder::stream::open_array
-	for(i = 0; i<transactions.size(); i++){
-		<<transactions[i]
-	}
-	<< close_array
+	<< "transactions" << transactions
 	<< bsoncxx::builder::stream::close_document
 	<< bsoncxx::builder::stream::finalize;
 	bsoncxx::document::view view = doc_value.view();
@@ -112,13 +104,12 @@ mongo::BSONObj getOwner(string id){
 }
 
 //Stores transaction into database returns the id for the db
-string transaction(string payer, string payee, float amount, transactionNo){
+string transaction(string payer, string payee, float amount){
 	auto builder = bsoncxx::builder::stream::document{};
 	bsoncxx::document::value doc_value = builder
 	<< "payer" << payer
 	<< "payee" << payee
 	<< "amount" << amount
-	<< "transaction_number" << transactionNo
 	<< bsoncxx::builder::stream::close_document
 	<< bsoncxx::builder::stream::finalize;
 	bsoncxx::document::view view = doc_value.view();
