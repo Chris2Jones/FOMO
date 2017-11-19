@@ -13,7 +13,6 @@ class Transaction {
 private:
 	std::string Payer;
 	std::string Payee;
-
 	double money;
 public:
 	//Create a transaction between Payer, and Payee, without specifying money

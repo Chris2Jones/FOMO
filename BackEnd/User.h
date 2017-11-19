@@ -25,10 +25,9 @@ private:
 	string Name;
 	string Email;
 	string Address;
-
+	string Password;
 	//Personal info + Name
 	int Age;
-	string Gender;
 
 	//Transaction related attributes
 	bool LockFunds;
@@ -39,11 +38,11 @@ private:
 public:
 	//Setters
 	User();
-	User(string name,string email,string address,int age,string gender,float tab);
+	User(string name,string email,string address,int age,float tab, string password);
 	void addCreditCard(int);
 	void setName(string name);
 	void setMailingInfo(string email, string address);
-	void setPersonalInfo(string gender, int age);
+	void setPersonalInfo(int age);
 	void addToTab(float tab);
 
 	//Getters
