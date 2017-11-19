@@ -7,17 +7,20 @@
 //
 
 #import "Business.h"
+#import "Drinks.h"
 
 @interface Business ()
 
 @property (strong, nonatomic) NSString *email;
-@property (strong, nonatomic) NSArray *paymentHistory;
-@property (strong, nonatomic) NSArray *menu;
+@property (strong, nonatomic) NSString *name;
+@property (strong, nonatomic) NSMutableArray *drinks;
 @property (strong, nonatomic) NSString *address;
-@property (strong, nonatomic) NSString *bankInfo;
+@property (nonatomic) float bankInfo;
 
 @end
 
 @implementation Business
+
+
 
 @end

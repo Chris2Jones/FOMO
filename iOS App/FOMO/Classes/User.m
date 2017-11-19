@@ -13,9 +13,14 @@
 @property (strong, nonatomic) NSString *loginCredentials;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *email;
+@property (strong, nonatomic) NSString *address;
+@property (strong, nonatomic) NSString *age;
 @property (strong, nonatomic) NSString *password;
 @property (nonatomic) BOOL *lockFundStatus;
-@property (nonatomic) NSInteger *tab;
+@property (nonatomic) float *tab;
+@property (strong, nonatomic) NSString *transactionHistory;
+@property (strong, nonatomic) NSArray *creditCards;
+
 
 @end
 

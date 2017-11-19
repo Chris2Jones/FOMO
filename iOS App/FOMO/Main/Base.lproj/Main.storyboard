@@ -150,6 +150,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" constant="286" id="1J1-dY-lMm"/>
                                     <constraint firstAttribute="trailing" secondItem="nkx-cQ-Yu1" secondAttribute="trailing" constant="20" id="CNH-HT-HCo"/>
                                     <constraint firstItem="nkx-cQ-Yu1" firstAttribute="top" secondItem="ELx-If-Z1u" secondAttribute="top" constant="10" id="L8o-Ek-4qf"/>
                                     <constraint firstAttribute="bottom" secondItem="nkx-cQ-Yu1" secondAttribute="bottom" constant="10" id="XZS-fw-RgH"/>
@@ -708,7 +709,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n47-se-4VC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-914.39999999999998" y="668.81559220389806"/>
+            <point key="canvasLocation" x="-687" y="0.0"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
