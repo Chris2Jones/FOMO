@@ -32,17 +32,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //[self setupSplashScreen];
     [self setupHeader];
     [self setupFundDisplayView];
     [self setupButtons];
     [self setupPicker];
-}
-
-- (void)setupSplashScreen {
-    UIImageView *splashScreen = [[UIImageView alloc] initWithFrame:[[UIScreen mainScreen]bounds]];
-    splashScreen.backgroundColor = [UIColor greenColor];
-    [self.view addSubview:splashScreen];
 }
 
 - (void)setupHeader{

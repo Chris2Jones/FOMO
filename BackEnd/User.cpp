@@ -11,9 +11,7 @@
 #include <string>
 
 #include "Transaction.h"
-int main(){
-	return 0;
-}
+
 User::User(){
 	Tab = 0;
 	LockFunds = true;
@@ -21,12 +19,12 @@ User::User(){
 	TransactionHistory = "Transaction History:";
 }
 
-User::User(string name,string email,string address,int age,string gender,float tab){
+User::User(string name,string email,string address,int age,float tab, string password){
 	Name = name;
+	Password = password;
 	Email = email;
 	Address = address;
 	Age = age;
-	Gender = gender;
 	Tab = tab;
 	LockFunds = false;
 	TransactionHistory = "Transaction History:";
@@ -45,8 +43,7 @@ void User::setMailingInfo(string email, string address){
 	Address= address;
 }
 
-void User::setPersonalInfo(string gender,int age){
-	Gender = gender;
+void User::setPersonalInfo(int age){
 	Age = age;
 }
 
@@ -63,7 +60,6 @@ string User::getName(){
 string User::getPersonalInfo(){
 	string buffer = Name + ": \n" + "Age : ";
 	buffer = buffer + std::to_string(Age) + "\n Gender: ";
-	buffer = buffer + Gender;
 	return buffer;
 }
 

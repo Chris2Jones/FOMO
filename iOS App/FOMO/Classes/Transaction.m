@@ -12,8 +12,8 @@
 
 @interface Transaction ()
 
-@property (strong, nonatomic) User *payer;
-@property (strong, nonatomic) Business *payee;
+@property (strong, nonatomic) NSString *payer;
+@property (strong, nonatomic) NSString *payee;
 @property (nonatomic) NSInteger *amount;
 
 @end
