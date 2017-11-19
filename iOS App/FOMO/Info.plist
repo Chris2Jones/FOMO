@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSCameraUsageDescription</key>
-	<string>The camera is used to scan for QR Codes</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -27,6 +25,8 @@
 	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>The camera is used to scan for QR Codes</string>
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>This app gets data for the user to find friends</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
@@ -38,7 +38,7 @@ Privacy - Location Always Usage Description
 Privacy</key>
 	<string>Description</string>
 	<key>UILaunchStoryboardName</key>
-	<string>SplashViewController</string>
+	<string>Main</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

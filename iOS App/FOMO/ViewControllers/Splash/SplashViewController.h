@@ -2,7 +2,7 @@
 //  SplashViewController.h
 //  FOMO
 //
-//  Created by admin on 11/8/17.
+//  Created by admin on 11/18/17.
 //  Copyright © 2017 kahshe. All rights reserved.
 //
 

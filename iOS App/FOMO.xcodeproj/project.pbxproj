@@ -21,8 +21,6 @@
 		845E69451F9FE08700F874F0 /* FOMOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E69441F9FE08700F874F0 /* FOMOTests.m */; };
 		845E69501F9FE08700F874F0 /* FOMOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E694F1F9FE08700F874F0 /* FOMOUITests.m */; };
 		845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E695E1F9FE1A700F874F0 /* MapViewController.m */; };
-		84923F831FB34FE00082BFA0 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F811FB34FE00082BFA0 /* SplashViewController.m */; };
-		84923F841FB34FE00082BFA0 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84923F821FB34FE00082BFA0 /* SplashViewController.xib */; };
 		84923F881FB397590082BFA0 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F871FB397590082BFA0 /* User.m */; };
 		84923F8B1FB398350082BFA0 /* Drinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F8A1FB398350082BFA0 /* Drinks.m */; };
 		84923F8E1FB398A40082BFA0 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F8D1FB398A40082BFA0 /* Business.m */; };
@@ -36,6 +34,7 @@
 		84C65D911FB15CFC00D91CFE /* PaymentOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D8F1FB15CFC00D91CFE /* PaymentOptionsViewController.xib */; };
 		84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D931FB1630500D91CFE /* ChangeLocationViewController.m */; };
 		84C65D961FB1630500D91CFE /* ChangeLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D941FB1630500D91CFE /* ChangeLocationViewController.xib */; };
+		84CB4BB91FC0DB910063523D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4BB81FC0DB910063523D /* SplashViewController.m */; };
 		84F079E91FA7E6DF00E40DD2 /* CreditcardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F079E71FA7E6DF00E40DD2 /* CreditcardTableViewCell.m */; };
 		84F079EA1FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F079E81FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib */; };
 		84F079EE1FA7ED1600E40DD2 /* BarTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F079EC1FA7ED1600E40DD2 /* BarTableViewCell.m */; };
@@ -88,9 +87,6 @@
 		845E69511F9FE08700F874F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		845E695D1F9FE1A700F874F0 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
 		845E695E1F9FE1A700F874F0 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
-		84923F801FB34FE00082BFA0 /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
-		84923F811FB34FE00082BFA0 /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		84923F821FB34FE00082BFA0 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		84923F861FB397590082BFA0 /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		84923F871FB397590082BFA0 /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		84923F891FB398350082BFA0 /* Drinks.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Drinks.h; sourceTree = "<group>"; };
@@ -113,6 +109,8 @@
 		84C65D921FB1630500D91CFE /* ChangeLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeLocationViewController.h; sourceTree = "<group>"; };
 		84C65D931FB1630500D91CFE /* ChangeLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeLocationViewController.m; sourceTree = "<group>"; };
 		84C65D941FB1630500D91CFE /* ChangeLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeLocationViewController.xib; sourceTree = "<group>"; };
+		84CB4BB71FC0DB910063523D /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
+		84CB4BB81FC0DB910063523D /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		84F079E61FA7E6DF00E40DD2 /* CreditcardTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditcardTableViewCell.h; sourceTree = "<group>"; };
 		84F079E71FA7E6DF00E40DD2 /* CreditcardTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditcardTableViewCell.m; sourceTree = "<group>"; };
 		84F079E81FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditcardTableViewCell.xib; sourceTree = "<group>"; };
@@ -168,9 +166,8 @@
 		841720141FB50B520071569F /* Splash */ = {
 			isa = PBXGroup;
 			children = (
-				84923F801FB34FE00082BFA0 /* SplashViewController.h */,
-				84923F811FB34FE00082BFA0 /* SplashViewController.m */,
-				84923F821FB34FE00082BFA0 /* SplashViewController.xib */,
+				84CB4BB71FC0DB910063523D /* SplashViewController.h */,
+				84CB4BB81FC0DB910063523D /* SplashViewController.m */,
 			);
 			path = Splash;
 			sourceTree = "<group>";
@@ -460,7 +457,6 @@
 				84C65D961FB1630500D91CFE /* ChangeLocationViewController.xib in Resources */,
 				84F079EA1FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib in Resources */,
 				84C65D8C1FB13E9100D91CFE /* ProfileSecondHeaderView.xib in Resources */,
-				84923F841FB34FE00082BFA0 /* SplashViewController.xib in Resources */,
 				84C65D791FAEEE1300D91CFE /* ProfileHeaderView.xib in Resources */,
 				84F079EF1FA7ED1600E40DD2 /* BarTableViewCell.xib in Resources */,
 				845E69351F9FE08700F874F0 /* Assets.xcassets in Resources */,
@@ -643,7 +639,6 @@
 			files = (
 				84923F911FB399130082BFA0 /* Transaction.m in Sources */,
 				84C65D901FB15CFC00D91CFE /* PaymentOptionsViewController.m in Sources */,
-				84923F831FB34FE00082BFA0 /* SplashViewController.m in Sources */,
 				845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */,
 				84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */,
 				845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */,
@@ -656,6 +651,7 @@
 				84923F941FB399C30082BFA0 /* Scanner.m in Sources */,
 				84F079E91FA7E6DF00E40DD2 /* CreditcardTableViewCell.m in Sources */,
 				845E693B1F9FE08700F874F0 /* main.m in Sources */,
+				84CB4BB91FC0DB910063523D /* SplashViewController.m in Sources */,
 				84F079EE1FA7ED1600E40DD2 /* BarTableViewCell.m in Sources */,
 				845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */,
 				84923F8B1FB398350082BFA0 /* Drinks.m in Sources */,
