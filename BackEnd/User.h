@@ -5,8 +5,8 @@
  *      Author: Owner
  */
 
-#ifndef USERCUSTOMER_H_
-#define USERCUSTOMER_H_
+#ifndef USER_H_
+#define USER_H_
 /*
  * user.h
  *
@@ -19,7 +19,7 @@
 
 using namespace std;
 
-class customer{
+class User{
 private:
 	//Mailing Info
 	string Name;
@@ -32,14 +32,15 @@ private:
 
 	//Transaction related attributes
 	bool LockFunds;
-	//int CC;
+	set<int> CC;
 	string TransactionHistory;
 	float Tab;
 
 public:
 	//Setters
-	customer();
-	customer(string name,string email,string address,int age,string gender,float tab);
+	User();
+	User(string name,string email,string address,int age,string gender,float tab);
+	void addCreditCard(int);
 	void setName(string name);
 	void setMailingInfo(string email, string address);
 	void setPersonalInfo(string gender, int age);
@@ -56,8 +57,8 @@ public:
 	bool accessFunds(); //Can you access the funds.
 
 	bool addTransactionPayer(Business, float); //Paying a business
-	bool addTransactionPayerC(customer, float); //Overloaded for a customer
-	bool addTransactionPayee(customer, float); //between two customers
+	bool addTransactionPayerC(User, float); //Overloaded for a customer
+	bool addTransactionPayee(User, float); //between two customers
 	void addTransactionString(Transaction t); //Record the transaction that just occured
 	//
 

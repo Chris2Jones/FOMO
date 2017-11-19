@@ -7,8 +7,8 @@
 
 #include "Business.h"
 #include "Transaction.h"
-#include "userCustomer.h"
 #include "Drinks.h"
+#include "User.h"
 
 Business::Business(string name){
 	Name = name;
@@ -25,6 +25,10 @@ void Business::addTransactionString(Transaction t){
 	TransactionHistory = TransactionHistory + "\n" + t.TtoString();
 }
 
+void Business::addDrink(const Drink d){
+	Drinks.push_back(d);
+}
+
 string Business::getTransactionHistory(){
 	return TransactionHistory;
 }
@@ -33,12 +37,12 @@ string Business::getName(){
 	return Name;
 }
 
-void Business::addDrink(const Drink d){
-	Drinks.push_back(d);
-}
-
 vector<Drink> Business::getDrinkList(){
 	return Drinks;
+}
+
+float Business::getTab(){
+	return Tab;
 }
 
 void Business::addTransactionPayee(float amount, Transaction t){
