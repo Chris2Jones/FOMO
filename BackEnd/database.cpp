@@ -26,12 +26,8 @@ named drinks userss owners and transactions
 */
 void dbinit(){
 	mongocxx::instance instance{};
-	mongocxx::client client{mongocxx::uri{}};
-	mongocxx::database db = client["fomodb"];
-	mongocxx::collection coll = db["drinks"];
-	mongocxx::collection coll = db["users"];
-	mongocxx::collection coll = db["owners"];
-	mongocxx::collection coll = db["transactions"];
+	mongocxx::uri uri("mongodb://<dbuser>:<dbpassword>@ds113636.mlab.com:13636/fomodb");
+	mongocxx::client client(uri);
 }
 
 //Stores drink into database returns the id for the db
@@ -78,7 +74,7 @@ mongo::BSONObj getUser(string id){
 }
 
 //Stores owner into database returns the id for the db
-string storeOwner(string name, string eMail, string location,  vector<string> &drinks, string transactions){//(string name, string email, string location)
+string storeOwner(string name, string eMail, string location,  vector<string> *drinks, string transactions){//(string name, string email, string location)
 	auto builder = bsoncxx::builder::stream::document{};
 	bsoncxx::document::value doc_value = builder
 	<< "name" << name
