@@ -8,7 +8,8 @@
 #include <iostream>
 #include "Transaction.h"
 #include <math.h>
-
+#include <sstream>
+#include <iomanip>
 using namespace std;
 
 Transaction::Transaction(string payer, string payee, float amount){
@@ -21,7 +22,11 @@ Transaction::Transaction(string payer, string payee): Payer(payer),Payee(payee),
 
 string Transaction::TtoString() const{
 	string transaction = "";
-	transaction = this->Payer + " sent " + this->Payee + " " + to_string(this->money) + "$.";
+	std::ostringstream stream;
+	stream << std::setprecision(2) << std::fixed;
+	stream << money;
+	std::string str = stream.str();
+	transaction = this->Payer + " sent " + this->Payee + " " + str + "$.";
 	return transaction;
 }
 

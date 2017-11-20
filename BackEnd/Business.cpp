@@ -15,6 +15,13 @@ Business::Business(string name){
 	Tab = 0;
 }
 
+Business::Business(string name, string email, string location){
+	Name = name;
+	Email = email;
+	Location = location;
+	Tab = 0;
+}
+
 void Business::addInfo(string name, string email, string location){
 	Name = name;
 	Email = email;
@@ -35,6 +42,13 @@ string Business::getTransactionHistory(){
 
 string Business::getName(){
 	return Name;
+}
+
+string Business::BtoString(){
+	string buffer = "Business: " + Name + "\n";
+	buffer = buffer + "Email: " + Email + "\n";
+	buffer = buffer + "Location: " + Location;
+	return buffer;
 }
 
 vector<Drink> Business::getDrinkList(){

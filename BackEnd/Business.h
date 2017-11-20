@@ -35,6 +35,7 @@ public:
 
 	//constructor
 	Business(string);
+	Business(string,string,string);
 	//~Business();
 
 	//Various setters
@@ -46,6 +47,7 @@ public:
 	void addTransactionPayee(float, Transaction);
 
 	//Various getters
+	string BtoString();
 	string getTransactionHistory();
 	vector<Drink> getDrinkList();
 	string getName();
