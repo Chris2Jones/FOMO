@@ -49,15 +49,16 @@ public:
 	string getName();
 	string getPersonalInfo();
 	string getMailingInfo();
+	float getTab();
 
 	//Transaction class users
 	string getTransactionHistory();
 	void lockFunds(bool); //Stops you from performing a transaction
 	bool accessFunds(); //Can you access the funds.
 
-	bool addTransactionPayer(Business, float); //Paying a business
-	bool addTransactionPayerC(User, float); //Overloaded for a customer
-	bool addTransactionPayee(User, float); //between two customers
+	bool addTransactionPayer(Business&, float); //Paying a business
+	bool addTransactionPayerC(User&, float); //Overloaded for a customer
+	bool addTransactionPayee(User&, float); //between two customers
 	void addTransactionString(Transaction t); //Record the transaction that just occured
 	//
 

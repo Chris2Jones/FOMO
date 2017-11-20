@@ -48,9 +48,7 @@ void User::setPersonalInfo(int age){
 }
 
 void User::addToTab(float tab){
-	if(tab>0){
-		Tab = Tab + tab;
-	}
+	Tab = Tab + tab;
 }
 
 string User::getName(){
@@ -58,26 +56,32 @@ string User::getName(){
 }
 
 string User::getPersonalInfo(){
-	string buffer = Name + ": \n" + "Age : ";
-	buffer = buffer + std::to_string(Age) + "\n Gender: ";
+	string buffer = "Name: " + Name + "\n" + "Age : ";
+	buffer = buffer + std::to_string(Age);
 	return buffer;
 }
 
 string User::getMailingInfo(){
-	return "Hello";
+	string buffer = "Email: " + Email + "\n";
+	buffer = buffer + "Address: " + Address + "\n";
+	return buffer;
 }
 
 string User::getTransactionHistory(){
 	return TransactionHistory;
 }
 
+float User::getTab(){
+	return Tab;
+}
 bool User::accessFunds(){
 	return LockFunds;
 }
 
-bool User::addTransactionPayer(Business payee, float amount ){
+bool User::addTransactionPayer(Business& payee, float amount ){
 	Transaction t = Transaction(this->Name, payee.getName(), amount);
-	if(!LockFunds){
+	if(LockFunds){
+		cout << "Funds are locked" << endl;
 		return false;
 	}
 	if(this->Tab > amount){
@@ -86,12 +90,14 @@ bool User::addTransactionPayer(Business payee, float amount ){
 		payee.addTransactionPayee(amount,t);
 		return true;
 	}
+	cout << "Not enough funds! Transaction Unsuccessful!" << endl;
 	return false;
 }
 
-bool User::addTransactionPayerC(User payee, float amount){
+bool User::addTransactionPayerC(User& payee, float amount){
 	Transaction t = Transaction(this->Name, payee.getName(), amount);
-	if(!LockFunds){
+	if(LockFunds){
+		cout << "Funds are locked! Transaction Unsuccessful!" << endl;
 		return false;
 	}
 	if(this->Tab > amount){
@@ -99,12 +105,14 @@ bool User::addTransactionPayerC(User payee, float amount){
 		TransactionHistory = TransactionHistory + "\n" + t.TtoString();
 		payee.addToTab(amount);
 		payee.addTransactionString(t);
+		cout<<"Transaction Successful"<<endl;
 		return true;
 	}
+	cout << "Not enough funds! Transaction Unsuccessful!" << endl;
 	return false;
 }
 
-bool User::addTransactionPayee(User payer, float amount){
+bool User::addTransactionPayee(User& payer, float amount){
 	bool check = payer.addTransactionPayerC(*this,amount);
 	return check;
 }
