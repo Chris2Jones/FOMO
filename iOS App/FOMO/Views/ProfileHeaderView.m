@@ -7,11 +7,13 @@
 //
 
 #import "ProfileHeaderView.h"
+#import "User.h"
 
 @interface ProfileHeaderView ()
 
 @property (strong, nonatomic) IBOutlet UIView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIView *profileImage;
+@property (weak, nonatomic) IBOutlet UILabel *profileName;
 
 @end
 
@@ -24,8 +26,14 @@
                                         owner:self
                                       options:nil] objectAtIndex:0]];
         [self styleViews];
+        
     }
     return self;
+}
+
+- (void)setUser {
+    User *user = [[User alloc] init];
+    self.profileName.text = user.name;
 }
 
 - (void)styleViews{

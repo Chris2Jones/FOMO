@@ -8,6 +8,7 @@
 
 #import "HomeViewController.h"
 #import <QRCodeReader.h>
+#import "User.h"
 #import <QRCodeReaderViewController.h>
 
 @interface HomeViewController ()
@@ -24,6 +25,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *pickerViewClose;
 @property (weak, nonatomic) IBOutlet UIButton *buyDrinks;
 @property (weak, nonatomic) IBOutlet UIButton *scanBarcodeButton;
+@property (strong) NSMutableData *responseData;
 @property (strong) NSArray *pickerData;
 
 @end
@@ -36,7 +38,14 @@
     [self setupFundDisplayView];
     [self setupButtons];
     [self setupPicker];
+    [self testDatabase];
 }
+
+- (void)testDatabase {
+    self.responseData = [[NSMutableData alloc] init];
+    
+}
+
 
 - (void)setupHeader{
     self.header.clipsToBounds = NO;
