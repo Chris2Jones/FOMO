@@ -67,7 +67,7 @@
     self.pickerBackgroundView.hidden = YES;
     self.pickerBackgroundView.alpha = 0.0;
     self.pickerViewDone.layer.cornerRadius = self.pickerViewDone.bounds.size.height/2;
-    self.pickerData = @[@"Ale House", @"The Brass", @"The Mansion", @"Clark Hall Pub", @"Queens Pub", @"The Brooklyn"];
+    self.pickerData = @[@"Ale House", @"The Brass", @"The Mansion", @"Clark Hall Pub", @"Queens Pub", @"The Brooklyn", @"Stages", @"Trinity"];
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
 }
