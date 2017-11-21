@@ -11,12 +11,6 @@
 
 @interface Business ()
 
-@property (strong, nonatomic) NSString *email;
-@property (strong, nonatomic) NSString *name;
-@property (strong, nonatomic) NSMutableArray *drinks;
-@property (strong, nonatomic) NSString *address;
-@property (nonatomic) float bankInfo;
-
 @end
 
 @implementation Business

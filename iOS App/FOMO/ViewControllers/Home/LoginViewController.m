@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "User.h"
+#import "PersistManager.h"
+#import "SignupViewController.h"
 
 @interface LoginViewController ()
 
@@ -85,21 +87,22 @@
 }
 
 - (IBAction)signUpButtonTapped:(id)sender {
-    [self setUserData];
-}
-
--(void)setUserData {
-    User *loginUser = [[User alloc]init];
-    loginUser.loginCredentials = self.usernameField.text;
-    loginUser.password = self.passwordField.text;
+    SignupViewController *viewController = [[SignupViewController alloc] init];
+    [self presentViewController:viewController animated:YES completion:NULL];
 }
 
 - (IBAction)logInButtonTapped:(id)sender {
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:NULL];
+    PersistManager *persist = [[PersistManager alloc] init];
+    User *potentialUser = [persist returnUserForKey:self.usernameField.text];
+    if (potentialUser != nil || self.passwordField.text == potentialUser.password) {
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:@"yes" forKey:@"didILogIn"];
+        [defaults synchronize];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:vc animated:YES completion:NULL];
+    };
 }
-
 
 @end

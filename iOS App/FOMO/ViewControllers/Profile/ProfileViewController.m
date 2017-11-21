@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIView *header;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray *content;
+@property (weak, nonatomic) IBOutlet UIButton *logOutButton;
 
 @end
 
@@ -153,5 +154,10 @@ static NSString *cellIdentifier1 = @"cell1";
     return self.content.count;
 }
 
+- (IBAction)logOutButtonTapped:(id)sender {
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:@"nah" forKey:@"didILogIn"];
+    [defaults synchronize];
+}
 
 @end

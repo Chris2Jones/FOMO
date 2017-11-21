@@ -10,7 +10,7 @@
 
 @interface User : NSObject
 
-@property (strong, nonatomic) NSString *loginCredentials;
+@property (strong, nonatomic) NSString *username;
 @property (strong, nonatomic) NSString *name;
 @property (strong, nonatomic) NSString *email;
 @property (strong, nonatomic) NSString *address;

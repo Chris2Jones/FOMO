@@ -11,6 +11,9 @@
 		37B5AF430B7E9579616667D0 /* libPods-FOMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF52C746A22709780E71A90 /* libPods-FOMOTests.a */; };
 		401601EC4B6B8EFB330C498C /* libPods-FOMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */; };
 		8435ECC01FC34CE90075F3B8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */; };
+		844CBDF21FC3C28000923F3E /* PersistManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CBDF11FC3C28000923F3E /* PersistManager.m */; };
+		844CBDF61FC3C7C700923F3E /* SignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 844CBDF41FC3C7C700923F3E /* SignupViewController.m */; };
+		844CBDF71FC3C7C700923F3E /* SignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 844CBDF51FC3C7C700923F3E /* SignupViewController.xib */; };
 		845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845579181FA0700000818965 /* BuyDrinksViewController.m */; };
 		8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455791B1FA072B000818965 /* AddFundsViewController.m */; };
 		845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E69291F9FE08700F874F0 /* AppDelegate.m */; };
@@ -67,6 +70,11 @@
 		676DE04664313403672F0F0B /* Pods-FOMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests.release.xcconfig"; sourceTree = "<group>"; };
 		8435ECBE1FC34CE90075F3B8 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		844CBDF01FC3C28000923F3E /* PersistManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersistManager.h; sourceTree = "<group>"; };
+		844CBDF11FC3C28000923F3E /* PersistManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersistManager.m; sourceTree = "<group>"; };
+		844CBDF31FC3C7C700923F3E /* SignupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignupViewController.h; sourceTree = "<group>"; };
+		844CBDF41FC3C7C700923F3E /* SignupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignupViewController.m; sourceTree = "<group>"; };
+		844CBDF51FC3C7C700923F3E /* SignupViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignupViewController.xib; sourceTree = "<group>"; };
 		845579171FA0700000818965 /* BuyDrinksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyDrinksViewController.h; sourceTree = "<group>"; };
 		845579181FA0700000818965 /* BuyDrinksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyDrinksViewController.m; sourceTree = "<group>"; };
 		8455791A1FA072B000818965 /* AddFundsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFundsViewController.h; sourceTree = "<group>"; };
@@ -263,6 +271,9 @@
 				8455791B1FA072B000818965 /* AddFundsViewController.m */,
 				8435ECBE1FC34CE90075F3B8 /* LoginViewController.h */,
 				8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */,
+				844CBDF31FC3C7C700923F3E /* SignupViewController.h */,
+				844CBDF41FC3C7C700923F3E /* SignupViewController.m */,
+				844CBDF51FC3C7C700923F3E /* SignupViewController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -304,6 +315,8 @@
 				84923F901FB399130082BFA0 /* Transaction.m */,
 				84923F921FB399C30082BFA0 /* Scanner.h */,
 				84923F931FB399C30082BFA0 /* Scanner.m */,
+				844CBDF01FC3C28000923F3E /* PersistManager.h */,
+				844CBDF11FC3C28000923F3E /* PersistManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -465,6 +478,7 @@
 				84C65D791FAEEE1300D91CFE /* ProfileHeaderView.xib in Resources */,
 				84F079EF1FA7ED1600E40DD2 /* BarTableViewCell.xib in Resources */,
 				845E69351F9FE08700F874F0 /* Assets.xcassets in Resources */,
+				844CBDF71FC3C7C700923F3E /* SignupViewController.xib in Resources */,
 				84C65D911FB15CFC00D91CFE /* PaymentOptionsViewController.xib in Resources */,
 				845E69331F9FE08700F874F0 /* Main.storyboard in Resources */,
 			);
@@ -646,10 +660,12 @@
 				84C65D901FB15CFC00D91CFE /* PaymentOptionsViewController.m in Sources */,
 				845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */,
 				84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */,
+				844CBDF61FC3C7C700923F3E /* SignupViewController.m in Sources */,
 				8435ECC01FC34CE90075F3B8 /* LoginViewController.m in Sources */,
 				845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */,
 				84923F881FB397590082BFA0 /* User.m in Sources */,
 				84C65D771FAEEDD200D91CFE /* ProfileHeaderView.m in Sources */,
+				844CBDF21FC3C28000923F3E /* PersistManager.m in Sources */,
 				84923F8E1FB398A40082BFA0 /* Business.m in Sources */,
 				845E695F1F9FE1A700F874F0 /* MapViewController.m in Sources */,
 				8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */,
