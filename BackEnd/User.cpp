@@ -71,6 +71,15 @@ string User::getTransactionHistory(){
 	return TransactionHistory;
 }
 
+string User::toString(){
+	string buffer = Name + "\t";
+	buffer = buffer + Email + "\t";
+	buffer = buffer + Address + "\t";
+	buffer = buffer + Password + "\t";
+	buffer = buffer + to_string(Age);
+	return buffer;
+}
+
 float User::getTab(){
 	return Tab;
 }

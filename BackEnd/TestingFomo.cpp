@@ -20,7 +20,7 @@ int main(){
 	cout << "*     \t******\t*    *\t******" <<endl;
 	cout << "------------------------------------------" <<endl;
 	//Creating two users
-	User Chris("Chris","Chris@queensu.ca","99 Princess Street",20,17.00,"password");
+	User Chris("Chris","chris@queensu.ca","99 Princess Street",20,17.00,"password");
 	User Alistair("Alistair","ali@queensu.ca","20 Bagot Street",20,12.00,"password");
 
 	//Testing if they were properly loaded

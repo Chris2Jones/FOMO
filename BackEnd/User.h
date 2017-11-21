@@ -62,6 +62,7 @@ public:
 	void addTransactionString(Transaction t); //Record the transaction that just occured
 	//
 
+	string toString();
 	//Create destructor??
 };
 
