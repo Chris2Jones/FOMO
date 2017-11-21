@@ -18,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 @property (weak, nonatomic) IBOutlet UIView *loginClusterView;
+@property (weak, nonatomic) IBOutlet UITextView *textDisplay;
 
 @end
 
@@ -49,6 +50,10 @@
     self.scrollView.delegate = self;
     self.pageControl.currentPage = 0;
     self.pageControl.currentPageIndicatorTintColor = [UIColor colorWithRed:1 green:130.0/255.0 blue:0 alpha:1];
+    self.textDisplay.layer.shadowColor = [[UIColor blackColor] CGColor];;
+    self.textDisplay.layer.shadowOffset = CGSizeMake(1.0f, 1.0f);
+    self.textDisplay.layer.shadowOpacity = 1.0f;
+    self.textDisplay.text = NSLocalizedString(@"Avoid the fear of missing out, with the revolutionary new payment app! The need to fumble around with pin numbers and cash is over!", nil);
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
@@ -56,8 +61,9 @@
     CGFloat currentPage = floor((scrollView.contentOffset.x - pageWidth/2)/pageWidth)+1;
     self.pageControl.currentPage = (NSInteger)currentPage;
     if (currentPage == 0){
-        [self animateOutButtons];
+        self.textDisplay.text = NSLocalizedString(@"Avoid the fear of missing out, with the revolutionary new payment app! The need to fumble around with pin numbers and cash is over!", nil);
     } else if (currentPage == 1) {
+        self.textDisplay.text = NSLocalizedString(@"Featuring the newest cutting edge interface, this app is guaranteed to blow you away. Now, sit back, relax, and have a drink!", nil);
         [self animateOutButtons];
     } else if (currentPage == 2) {
         [self animateInButtons];
@@ -67,12 +73,14 @@
 - (void)animateOutButtons {
     [UIView animateWithDuration:0.5 animations:^{
         self.loginClusterView.alpha = 0.0f;
+        self.textDisplay.alpha = 1.0f;
     }];
 }
 
 - (void)animateInButtons {
     [UIView animateWithDuration:0.5 animations:^{
         self.loginClusterView.alpha = 1.0f;
+        self.textDisplay.alpha = 0.0f;
     }];
 }
 
@@ -86,19 +94,12 @@
     loginUser.password = self.passwordField.text;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)logInButtonTapped:(id)sender {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:vc animated:YES completion:NULL];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
