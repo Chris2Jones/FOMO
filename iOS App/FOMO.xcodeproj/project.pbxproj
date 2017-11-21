@@ -10,6 +10,7 @@
 		30D3FF5E329FC0572059D000 /* libPods-FOMOUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2A9CA24656A0EE7CD62342 /* libPods-FOMOUITests.a */; };
 		37B5AF430B7E9579616667D0 /* libPods-FOMOTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EF52C746A22709780E71A90 /* libPods-FOMOTests.a */; };
 		401601EC4B6B8EFB330C498C /* libPods-FOMO.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */; };
+		8435ECC01FC34CE90075F3B8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */; };
 		845579191FA0700000818965 /* BuyDrinksViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845579181FA0700000818965 /* BuyDrinksViewController.m */; };
 		8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8455791B1FA072B000818965 /* AddFundsViewController.m */; };
 		845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 845E69291F9FE08700F874F0 /* AppDelegate.m */; };
@@ -64,6 +65,8 @@
 		3815CA999CD048D784EA3FE5 /* Pods-FOMOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5B1F9BB9B36FE9AEC42801FF /* libPods-FOMO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FOMO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		676DE04664313403672F0F0B /* Pods-FOMOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FOMOTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FOMOTests/Pods-FOMOTests.release.xcconfig"; sourceTree = "<group>"; };
+		8435ECBE1FC34CE90075F3B8 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		845579171FA0700000818965 /* BuyDrinksViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyDrinksViewController.h; sourceTree = "<group>"; };
 		845579181FA0700000818965 /* BuyDrinksViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyDrinksViewController.m; sourceTree = "<group>"; };
 		8455791A1FA072B000818965 /* AddFundsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddFundsViewController.h; sourceTree = "<group>"; };
@@ -258,6 +261,8 @@
 				845579181FA0700000818965 /* BuyDrinksViewController.m */,
 				8455791A1FA072B000818965 /* AddFundsViewController.h */,
 				8455791B1FA072B000818965 /* AddFundsViewController.m */,
+				8435ECBE1FC34CE90075F3B8 /* LoginViewController.h */,
+				8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -641,6 +646,7 @@
 				84C65D901FB15CFC00D91CFE /* PaymentOptionsViewController.m in Sources */,
 				845E69301F9FE08700F874F0 /* ProfileViewController.m in Sources */,
 				84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */,
+				8435ECC01FC34CE90075F3B8 /* LoginViewController.m in Sources */,
 				845E692A1F9FE08700F874F0 /* AppDelegate.m in Sources */,
 				84923F881FB397590082BFA0 /* User.m in Sources */,
 				84C65D771FAEEDD200D91CFE /* ProfileHeaderView.m in Sources */,

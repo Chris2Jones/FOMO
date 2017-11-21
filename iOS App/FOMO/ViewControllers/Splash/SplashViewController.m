@@ -68,7 +68,7 @@
 - (void)loadRootViewController {
     [NSThread sleepForTimeInterval:0.5];
     UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"LoginViewController"];
     vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
     [self presentViewController:vc animated:YES completion:NULL];
 }
