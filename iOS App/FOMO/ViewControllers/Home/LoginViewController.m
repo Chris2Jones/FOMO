@@ -94,7 +94,7 @@
 - (IBAction)logInButtonTapped:(id)sender {
     PersistManager *persist = [[PersistManager alloc] init];
     User *potentialUser = [persist returnUserForKey:self.usernameField.text];
-    if (potentialUser != nil || self.passwordField.text == potentialUser.password) {
+    if (potentialUser.password != nil || potentialUser.username != nil || self.passwordField.text == potentialUser.password) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:@"yes" forKey:@"didILogIn"];
         [defaults synchronize];

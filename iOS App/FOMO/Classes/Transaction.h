@@ -12,6 +12,6 @@
 
 @property (strong, nonatomic) NSString *payer;
 @property (strong, nonatomic) NSString *payee;
-@property (nonatomic) NSInteger *amount;
+@property (nonatomic) float amount;
 
 @end

@@ -43,9 +43,12 @@
 
 - (void)testDatabase {
     self.responseData = [[NSMutableData alloc] init];
-    
 }
 
+- (void)setFundsValue {
+    
+     //whatever value we need
+}
 
 - (void)setupHeader{
     self.header.clipsToBounds = NO;
@@ -162,6 +165,16 @@
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     return self.pickerData[row];
+}
+
+- (IBAction)addFundsButtonTapped:(id)sender {
+    AddFundsViewController *viewController = [[AddFundsViewController alloc] init];
+    viewController.delegate = self;
+    [self presentViewController:viewController animated:YES completion:NULL];
+}
+
+- (void)addFundsViewController:(AddFundsViewController *)viewController didChooseValue:(CGFloat)value {
+    self.fundDisplay.text = [NSString stringWithFormat:@"%f", value];
 }
 
 

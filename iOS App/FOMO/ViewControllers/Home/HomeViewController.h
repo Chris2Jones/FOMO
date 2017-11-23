@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <QRCodeReaderViewController.h>
+#import "AddFundsViewController.h"
 
-@interface HomeViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, QRCodeReaderDelegate, NSURLConnectionDelegate>
+@interface HomeViewController : UIViewController<UIPickerViewDelegate, UIPickerViewDataSource, QRCodeReaderDelegate, NSURLConnectionDelegate, AddFundsViewControllerDelegate>
 
 @end
 

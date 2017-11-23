@@ -15,6 +15,14 @@
 
 @implementation Business
 
+- (void)addInfo:(NSString *)bName withEmail:(NSString *)bEmail withAddress:(NSString *)bAddress {
+    self.email = bEmail;
+    self.name = bName;
+    self.address = bAddress;
+}
 
+- (void)addToTab:(float)amount{
+    self.bankInfo = self.bankInfo + amount;
+}
 
 @end

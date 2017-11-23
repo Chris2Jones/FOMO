@@ -97,6 +97,7 @@
     user.age = self.ageTextField.text;
     PersistManager *persist = [[PersistManager alloc] init];
     [persist saveUser:user ForKey:self.usernameTextField.text];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 

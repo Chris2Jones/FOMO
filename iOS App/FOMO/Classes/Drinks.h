@@ -11,7 +11,12 @@
 @interface Drinks : NSObject
 
 @property (strong, nonatomic) NSString *name;
-@property (nonatomic) NSInteger *cost;
-@property (nonatomic) BOOL *available;
+@property (nonatomic) float cost;
+@property (nonatomic) BOOL available;
+
+
+- (void)initializeDrink:(NSString *)dName
+               withCost:(float)dCost
+          withAvailable:(BOOL)dAvailable;
 
 @end
