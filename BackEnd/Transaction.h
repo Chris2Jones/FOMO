@@ -22,6 +22,7 @@ public:
 	Transaction(std::string payer, std::string payee, float amount);
 
 	std::string TtoString() const;
+	std::string toString();
 };
 
 #endif /* TRANSACTION_H_ */

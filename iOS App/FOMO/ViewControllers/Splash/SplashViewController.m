@@ -66,11 +66,26 @@
 }
 
 - (void)loadRootViewController {
-    [NSThread sleepForTimeInterval:0.5];
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:NULL];
+    /* unblock this code to reset the app
+     NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
+     [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
+     */
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    NSString *haveIloggedInYet = [defaults objectForKey:@"didILogIn"];
+    if ([haveIloggedInYet isEqualToString:@"yes"]) {
+        [NSThread sleepForTimeInterval:0.5];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"MainViewController"];
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:vc animated:YES completion:NULL];
+    } else {
+        [NSThread sleepForTimeInterval:0.5];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        UIViewController *vc = [sb instantiateViewControllerWithIdentifier:@"LoginViewController"];
+        vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+        [self presentViewController:vc animated:YES completion:NULL];
+    }
 }
 
 - (void)didReceiveMemoryWarning {

@@ -10,10 +10,6 @@
 
 @interface Drinks ()
 
-@property (strong, nonatomic) NSString *name;
-@property (nonatomic) NSInteger *cost;
-@property (nonatomic) BOOL *available;
-
 @end
 
 @implementation Drinks

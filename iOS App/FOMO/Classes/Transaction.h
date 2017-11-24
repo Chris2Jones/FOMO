@@ -10,4 +10,8 @@
 
 @interface Transaction : NSObject
 
+@property (strong, nonatomic) NSString *payer;
+@property (strong, nonatomic) NSString *payee;
+@property (nonatomic) NSInteger *amount;
+
 @end

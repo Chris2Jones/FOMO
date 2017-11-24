@@ -20,6 +20,8 @@ Transaction::Transaction(string payer, string payee, float amount){
 
 Transaction::Transaction(string payer, string payee): Payer(payer),Payee(payee), money(0) { }
 
+
+//For record keeping purposes
 string Transaction::TtoString() const{
 	string transaction = "";
 	std::ostringstream stream;
@@ -28,6 +30,15 @@ string Transaction::TtoString() const{
 	std::string str = stream.str();
 	transaction = this->Payer + " sent " + this->Payee + " " + str + "$.";
 	return transaction;
+}
+
+
+//For the database
+string Transaction::toString(){
+	string buffer = Payee + "\t";
+	buffer = buffer + Payer + "\t";
+	buffer = buffer + to_string(money) + "\t";
+	return buffer;
 }
 
 
