@@ -28,6 +28,13 @@ Drink::Drink(std::string n, float a) {
 	cost = a;
 }
 
+string Drink::toString(){
+	string buffer = name + "\t";
+	buffer = buffer + to_string(cost) + "\t";
+	buffer = buffer + to_string(availability) + "\t";
+	return buffer;
+}
+
 std::string Drink::getName() const { return name; }
 float Drink::getCost() const { return cost; }
 bool Drink::isAvailable() const { return availability; }

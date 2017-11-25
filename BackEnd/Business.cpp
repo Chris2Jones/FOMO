@@ -45,10 +45,11 @@ string Business::getName(){
 }
 
 string Business::BtoString(){
-	string buffer = "Business: " + Name + "\n";
-	buffer = buffer + "Email: " + Email + "\n";
-	buffer = buffer + "Location: " + Location;
+	string buffer = Name + "\t";
+	buffer = buffer + Email + "\t";
+	buffer = buffer + Location;
 	return buffer;
+	//Drinks are not being returned....
 }
 
 vector<Drink> Business::getDrinkList(){

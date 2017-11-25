@@ -35,6 +35,7 @@ public:
 	void setName(std::string);      //Mutator
 	void setCost(float c);          //Mutator
 	void setAvailability(bool a);   //Mutator
+	string toString();
 
 private:
 	std::string name;
