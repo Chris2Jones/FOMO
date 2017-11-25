@@ -43,6 +43,16 @@
     [self setupHeader];
     [self setupButtons];
     [self setupFundDisplayView];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.fundsTextField resignFirstResponder];
 }
 
 - (void)setupHeader{

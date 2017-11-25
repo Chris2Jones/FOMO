@@ -49,6 +49,20 @@
     [self setupHeader];
     [self styleViews];
     [self styleButtons];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.nameTextField resignFirstResponder];
+    [self.emailTextField resignFirstResponder];
+    [self.usernameTextField resignFirstResponder];
+    [self.passwordTextField resignFirstResponder];
+    [self.ageTextField resignFirstResponder];
 }
 
 - (void)setupHeader{
@@ -96,9 +110,13 @@
     user.password = self.passwordTextField.text;
     user.age = self.ageTextField.text;
     PersistManager *persist = [[PersistManager alloc] init];
-    [persist saveUser:user ForKey:self.usernameTextField.text];
+    if (self.nameTextField.text == nil || self.emailTextField.text == nil || self.usernameTextField.text == nil || self.passwordTextField.text == nil || self.ageTextField.text == nil) {
+        
+    } else {
+        [persist saveUser:user ForKey:self.usernameTextField.text];
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
-    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

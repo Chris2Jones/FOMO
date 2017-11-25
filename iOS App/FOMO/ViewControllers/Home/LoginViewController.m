@@ -29,6 +29,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self styleViews];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
 }
 
 - (void)styleViews {

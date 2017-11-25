@@ -9,7 +9,9 @@
 #import "HomeViewController.h"
 #import <QRCodeReader.h>
 #import "User.h"
+#import "PersistManager.h"
 #import <QRCodeReaderViewController.h>
+#import "BuyDrinksViewController.h"
 
 @interface HomeViewController ()
 
@@ -38,16 +40,15 @@
     [self setupFundDisplayView];
     [self setupButtons];
     [self setupPicker];
-    [self testDatabase];
-}
-
-- (void)testDatabase {
-    self.responseData = [[NSMutableData alloc] init];
+    [self setFundsValue];
 }
 
 - (void)setFundsValue {
-    
-     //whatever value we need
+    User *user = [[User alloc]init];
+    PersistManager *persistManager = [[PersistManager alloc] init];
+    user = [persistManager returnUserForKey:@"asdf"];
+    NSRange stringRange = {0,5};
+    self.fundDisplay.text = [[NSString stringWithFormat:@"%f", user.tab] substringWithRange:stringRange];
 }
 
 - (void)setupHeader{
@@ -72,6 +73,7 @@
     self.addFundButton.layer.borderWidth = 1;
     self.buyDrinks.layer.cornerRadius = 5;
     self.scanBarcodeButton.layer.cornerRadius = 5;
+
 }
 
 - (void)setupPicker{
@@ -111,6 +113,7 @@
     } completion:^(BOOL finished) {
         self.pickerBackgroundView.hidden = YES;
     }];
+    
 }
 
 - (IBAction)donePickerTapped:(id)sender {
@@ -135,6 +138,31 @@
     }];
 }
 
+- (IBAction)barPickerTapped:(id)sender {
+    [self.view bringSubviewToFront:self.pickerBackgroundView];
+    [UIView animateWithDuration:0.3 animations:^{
+        self.pickerBackgroundView.transform = CGAffineTransformIdentity;
+        self.pickerBackgroundView.hidden = NO;
+        self.pickerBackgroundView.alpha = 1.0;
+    }];
+}
+
+- (IBAction)buyDrinksButtontapped:(id)sender {
+    BuyDrinksViewController *viewController = [[BuyDrinksViewController alloc] initWithValue:self.fundDisplay.text];
+    [self presentViewController:viewController animated:YES completion:nil];
+}
+
+- (IBAction)addFundsButtonTapped:(id)sender {
+    AddFundsViewController *viewController = [[AddFundsViewController alloc] init];
+    viewController.delegate = self;
+    [self presentViewController:viewController animated:YES completion:NULL];
+}
+
+- (void)addFundsViewController:(AddFundsViewController *)viewController didChooseValue:(CGFloat)value {
+    NSRange stringRange = {0,5};
+    self.fundDisplay.text = [[NSString stringWithFormat:@"%f", value] substringWithRange:stringRange];
+}
+
 - (void)reader:(QRCodeReaderViewController *)reader didScanResult:(NSString *)result {
     [self dismissViewControllerAnimated:YES completion:^{
         NSLog(@"%@", result);
@@ -143,16 +171,6 @@
 
 - (void)readerDidCancel:(QRCodeReaderViewController *)reader {
     [self dismissViewControllerAnimated:YES completion:NULL];
-}
-
-
-- (IBAction)barPickerTapped:(id)sender {
-    [self.view bringSubviewToFront:self.pickerBackgroundView];
-    [UIView animateWithDuration:0.3 animations:^{
-        self.pickerBackgroundView.transform = CGAffineTransformIdentity;
-        self.pickerBackgroundView.hidden = NO;
-        self.pickerBackgroundView.alpha = 1.0;
-    }];
 }
 
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
@@ -166,16 +184,5 @@
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
     return self.pickerData[row];
 }
-
-- (IBAction)addFundsButtonTapped:(id)sender {
-    AddFundsViewController *viewController = [[AddFundsViewController alloc] init];
-    viewController.delegate = self;
-    [self presentViewController:viewController animated:YES completion:NULL];
-}
-
-- (void)addFundsViewController:(AddFundsViewController *)viewController didChooseValue:(CGFloat)value {
-    self.fundDisplay.text = [NSString stringWithFormat:@"%f", value];
-}
-
 
 @end
