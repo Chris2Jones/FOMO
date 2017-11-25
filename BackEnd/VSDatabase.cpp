@@ -2,8 +2,6 @@
 //
 
 #include "stdafx.h"
-
-
 #include <bson.h>
 #include <mongoc.h>
 #include <stdio.h>
@@ -13,7 +11,7 @@
 using namespace std;
 
 
-
+//Puts a drink onto database
 string storeDrink(string name, float cost, bool availability) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -21,10 +19,12 @@ string storeDrink(string name, float cost, bool availability) {
 	bson_oid_t oid;
 	bson_t *document;
 	char cid[25];
-
+	
 	mongoc_init();
+	
 	client = mongoc_client_new("mongodb://DavidGarven:database123@ds113636.mlab.com:13636/fomodb");
 	collection = mongoc_client_get_collection(client, "fomodb", "drinks");
+	
 	document = bson_new();
 	bson_oid_init(&oid, NULL);
 	BSON_APPEND_OID(document, "_id", &oid);
@@ -42,10 +42,10 @@ string storeDrink(string name, float cost, bool availability) {
 	mongoc_collection_destroy(collection);
 	mongoc_client_destroy(client);
 	mongoc_cleanup();
-
 	return id;
 }
 
+//Puts a transaction onto database
 string storeTransaction(string payer, string payee, float amount) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -59,7 +59,6 @@ string storeTransaction(string payer, string payee, float amount) {
 
 	client = mongoc_client_new("mongodb://DavidGarven:database123@ds113636.mlab.com:13636/fomodb");
 	collection = mongoc_client_get_collection(client, "fomodb", "transactions");
-
 
 	document = bson_new();
 	bson_oid_init(&oid, NULL);
@@ -82,6 +81,7 @@ string storeTransaction(string payer, string payee, float amount) {
 	return id;
 }
 
+//Stores user onto database
 string storeUser(string name, string email, string address, int age, float tab) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -120,6 +120,7 @@ string storeUser(string name, string email, string address, int age, float tab) 
 	return id;
 }
 
+//Stores owner on database
 string storeOwner(string name, string email, string location, vector<string> drinks, string transactions) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -165,7 +166,7 @@ string storeOwner(string name, string email, string location, vector<string> dri
 	return id;
 }
 
-
+//Returns a JSON string containing information on drink, found by database id
 string getDrink(string id) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -176,25 +177,26 @@ string getDrink(string id) {
 	char *str;
 	string drink;
 	bson_oid_init_from_string(&oid, id.c_str());
+	
 	mongoc_init();
 
 	client = mongoc_client_new("mongodb://DavidGarven:database123@ds113636.mlab.com:13636/fomodb");
 	collection = mongoc_client_get_collection(client, "fomodb", "drinks");
+	
 	query = bson_new();
 	BSON_APPEND_OID(query, "_id", &oid);
 	cursor = mongoc_collection_find(collection, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
 	mongoc_cursor_next(cursor, &doc);
 	str = bson_as_json(doc, NULL);
-	printf("%s\n", str);
-	bson_free(str);
 	bson_destroy(query);
 	mongoc_cursor_destroy(cursor);
 	mongoc_collection_destroy(collection);
 	mongoc_client_destroy(client);
 	drink = str;
-	return "hello";
+	return drink;
 }
 
+//Returns a JSON string containing information on transaction, found by database id
 string getTransaction(string id) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -203,7 +205,7 @@ string getTransaction(string id) {
 	bson_t *query;
 	bson_oid_t oid;
 	char *str;
-	string drink;
+	string transaction;
 	bson_oid_init_from_string(&oid, id.c_str());
 	mongoc_init();
 
@@ -214,16 +216,15 @@ string getTransaction(string id) {
 	cursor = mongoc_collection_find(collection, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
 	mongoc_cursor_next(cursor, &doc);
 	str = bson_as_json(doc, NULL);
-	printf("%s\n", str);
-	bson_free(str);
 	bson_destroy(query);
 	mongoc_cursor_destroy(cursor);
 	mongoc_collection_destroy(collection);
 	mongoc_client_destroy(client);
-	drink = str;
-	return "hello";
+	transaction = str;
+	return transaction;
 }
 
+//Returns a JSON string containing information on user, found by database id
 string getUser(string id) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
@@ -232,28 +233,28 @@ string getUser(string id) {
 	bson_t *query;
 	bson_oid_t oid;
 	char *str;
-	string drink;
+	string user;
 	bson_oid_init_from_string(&oid, id.c_str());
 	mongoc_init();
 
 	client = mongoc_client_new("mongodb://DavidGarven:database123@ds113636.mlab.com:13636/fomodb");
 	collection = mongoc_client_get_collection(client, "fomodb", "users");
+	
 	query = bson_new();
 	BSON_APPEND_OID(query, "_id", &oid);
 	cursor = mongoc_collection_find(collection, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
 	mongoc_cursor_next(cursor, &doc);
 	str = bson_as_json(doc, NULL);
-	printf("%s\n", str);
-	bson_free(str);
 	bson_destroy(query);
 	mongoc_cursor_destroy(cursor);
 	mongoc_collection_destroy(collection);
 	mongoc_client_destroy(client);
-	drink = str;
-	return "hello";
+	user = str;
+	return user;
 }
 
-string getUOwner(string id) {
+//Returns a JSON string containing information on owner, found by database id
+string getOwner(string id) {
 	mongoc_client_t *client;
 	mongoc_collection_t *collection;
 	mongoc_cursor_t *cursor;
@@ -261,25 +262,24 @@ string getUOwner(string id) {
 	bson_t *query;
 	bson_oid_t oid;
 	char *str;
-	string drink;
+	string owner;
 	bson_oid_init_from_string(&oid, id.c_str());
 	mongoc_init();
 
 	client = mongoc_client_new("mongodb://DavidGarven:database123@ds113636.mlab.com:13636/fomodb");
 	collection = mongoc_client_get_collection(client, "fomodb", "owners");
+	
 	query = bson_new();
 	BSON_APPEND_OID(query, "_id", &oid);
 	cursor = mongoc_collection_find(collection, MONGOC_QUERY_NONE, 0, 0, 0, query, NULL, NULL);
 	mongoc_cursor_next(cursor, &doc);
 	str = bson_as_json(doc, NULL);
-	printf("%s\n", str);
-	bson_free(str);
 	bson_destroy(query);
 	mongoc_cursor_destroy(cursor);
 	mongoc_collection_destroy(collection);
 	mongoc_client_destroy(client);
-	drink = str;
-	return "hello";
+	owner = str;
+	return owner;
 }
 
 
