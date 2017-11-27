@@ -66,7 +66,7 @@
 }
 
 - (void)loadRootViewController {
-    /* unblock this code to reset the app
+    /*unblock this code to reset the app
      NSString *appDomain = [[NSBundle mainBundle] bundleIdentifier];
      [[NSUserDefaults standardUserDefaults] removePersistentDomainForName:appDomain];
      */

@@ -26,6 +26,18 @@
     [super viewDidLoad];
     [self setupHeader];
     [self setupViews];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.billingNameTextField resignFirstResponder];
+    [self.cardNumberTextField resignFirstResponder];
+    [self.expiryTextField resignFirstResponder];
 }
 
 - (void)setupViews {

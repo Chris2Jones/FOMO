@@ -10,4 +10,6 @@
 
 @interface BuyDrinksViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+- (instancetype)initWithValue:(NSString *)value;
+
 @end

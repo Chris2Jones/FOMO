@@ -16,4 +16,10 @@
 
 @implementation Transaction
 
+- (void) intializeT:(NSString* )tPayer withPayee:(NSString*)tPayee withAmount:(float) tAmount{
+    self.payer = tPayer;
+    self.payee = tPayee;
+    self.amount = tAmount;
+}
+
 @end

@@ -14,4 +14,12 @@
 
 @implementation Drinks
 
+- (void)initializeDrink:(NSString *)dName
+               withCost:(float)dCost
+          withAvailable:(BOOL)dAvailable {
+    self.name = dName;
+    self.cost = dCost;
+    self.available = dAvailable;
+}
+
 @end

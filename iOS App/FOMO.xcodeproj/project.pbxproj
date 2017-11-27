@@ -30,6 +30,9 @@
 		84923F8E1FB398A40082BFA0 /* Business.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F8D1FB398A40082BFA0 /* Business.m */; };
 		84923F911FB399130082BFA0 /* Transaction.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F901FB399130082BFA0 /* Transaction.m */; };
 		84923F941FB399C30082BFA0 /* Scanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 84923F931FB399C30082BFA0 /* Scanner.m */; };
+		84A5EA791FC78E7400CD7BD3 /* BuyDrinksViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A5EA781FC78E7400CD7BD3 /* BuyDrinksViewController.xib */; };
+		84A742151FC64F9F000CFD16 /* LoginFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A742141FC64F9F000CFD16 /* LoginFooterView.m */; };
+		84A742171FC64FAC000CFD16 /* LoginFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84A742161FC64FAC000CFD16 /* LoginFooterView.xib */; };
 		84C65D771FAEEDD200D91CFE /* ProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D761FAEEDD200D91CFE /* ProfileHeaderView.m */; };
 		84C65D791FAEEE1300D91CFE /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D781FAEEE1300D91CFE /* ProfileHeaderView.xib */; };
 		84C65D861FB1377500D91CFE /* ProfileSecondHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D851FB1377500D91CFE /* ProfileSecondHeaderView.m */; };
@@ -38,6 +41,7 @@
 		84C65D911FB15CFC00D91CFE /* PaymentOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D8F1FB15CFC00D91CFE /* PaymentOptionsViewController.xib */; };
 		84C65D951FB1630500D91CFE /* ChangeLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C65D931FB1630500D91CFE /* ChangeLocationViewController.m */; };
 		84C65D961FB1630500D91CFE /* ChangeLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C65D941FB1630500D91CFE /* ChangeLocationViewController.xib */; };
+		84C8D4711FC6121C0034D6D0 /* AddFundsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84C8D4701FC6121C0034D6D0 /* AddFundsViewController.xib */; };
 		84CB4BB91FC0DB910063523D /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CB4BB81FC0DB910063523D /* SplashViewController.m */; };
 		84F079E91FA7E6DF00E40DD2 /* CreditcardTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F079E71FA7E6DF00E40DD2 /* CreditcardTableViewCell.m */; };
 		84F079EA1FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F079E81FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib */; };
@@ -108,6 +112,10 @@
 		84923F901FB399130082BFA0 /* Transaction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transaction.m; sourceTree = "<group>"; };
 		84923F921FB399C30082BFA0 /* Scanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
 		84923F931FB399C30082BFA0 /* Scanner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Scanner.m; sourceTree = "<group>"; };
+		84A5EA781FC78E7400CD7BD3 /* BuyDrinksViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyDrinksViewController.xib; sourceTree = "<group>"; };
+		84A742131FC64F9F000CFD16 /* LoginFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginFooterView.h; sourceTree = "<group>"; };
+		84A742141FC64F9F000CFD16 /* LoginFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginFooterView.m; sourceTree = "<group>"; };
+		84A742161FC64FAC000CFD16 /* LoginFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginFooterView.xib; sourceTree = "<group>"; };
 		84C65D751FAEEDD200D91CFE /* ProfileHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileHeaderView.h; sourceTree = "<group>"; };
 		84C65D761FAEEDD200D91CFE /* ProfileHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileHeaderView.m; sourceTree = "<group>"; };
 		84C65D781FAEEE1300D91CFE /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
@@ -120,6 +128,7 @@
 		84C65D921FB1630500D91CFE /* ChangeLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeLocationViewController.h; sourceTree = "<group>"; };
 		84C65D931FB1630500D91CFE /* ChangeLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeLocationViewController.m; sourceTree = "<group>"; };
 		84C65D941FB1630500D91CFE /* ChangeLocationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangeLocationViewController.xib; sourceTree = "<group>"; };
+		84C8D4701FC6121C0034D6D0 /* AddFundsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFundsViewController.xib; sourceTree = "<group>"; };
 		84CB4BB71FC0DB910063523D /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		84CB4BB81FC0DB910063523D /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		84F079E61FA7E6DF00E40DD2 /* CreditcardTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CreditcardTableViewCell.h; sourceTree = "<group>"; };
@@ -267,8 +276,10 @@
 				845E692C1F9FE08700F874F0 /* HomeViewController.m */,
 				845579171FA0700000818965 /* BuyDrinksViewController.h */,
 				845579181FA0700000818965 /* BuyDrinksViewController.m */,
+				84A5EA781FC78E7400CD7BD3 /* BuyDrinksViewController.xib */,
 				8455791A1FA072B000818965 /* AddFundsViewController.h */,
 				8455791B1FA072B000818965 /* AddFundsViewController.m */,
+				84C8D4701FC6121C0034D6D0 /* AddFundsViewController.xib */,
 				8435ECBE1FC34CE90075F3B8 /* LoginViewController.h */,
 				8435ECBF1FC34CE90075F3B8 /* LoginViewController.m */,
 				844CBDF31FC3C7C700923F3E /* SignupViewController.h */,
@@ -330,6 +341,9 @@
 				84C65D841FB1377500D91CFE /* ProfileSecondHeaderView.h */,
 				84C65D851FB1377500D91CFE /* ProfileSecondHeaderView.m */,
 				84C65D8B1FB13E9100D91CFE /* ProfileSecondHeaderView.xib */,
+				84A742131FC64F9F000CFD16 /* LoginFooterView.h */,
+				84A742141FC64F9F000CFD16 /* LoginFooterView.m */,
+				84A742161FC64FAC000CFD16 /* LoginFooterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -474,11 +488,14 @@
 			files = (
 				84C65D961FB1630500D91CFE /* ChangeLocationViewController.xib in Resources */,
 				84F079EA1FA7E6DF00E40DD2 /* CreditcardTableViewCell.xib in Resources */,
+				84A742171FC64FAC000CFD16 /* LoginFooterView.xib in Resources */,
 				84C65D8C1FB13E9100D91CFE /* ProfileSecondHeaderView.xib in Resources */,
+				84A5EA791FC78E7400CD7BD3 /* BuyDrinksViewController.xib in Resources */,
 				84C65D791FAEEE1300D91CFE /* ProfileHeaderView.xib in Resources */,
 				84F079EF1FA7ED1600E40DD2 /* BarTableViewCell.xib in Resources */,
 				845E69351F9FE08700F874F0 /* Assets.xcassets in Resources */,
 				844CBDF71FC3C7C700923F3E /* SignupViewController.xib in Resources */,
+				84C8D4711FC6121C0034D6D0 /* AddFundsViewController.xib in Resources */,
 				84C65D911FB15CFC00D91CFE /* PaymentOptionsViewController.xib in Resources */,
 				845E69331F9FE08700F874F0 /* Main.storyboard in Resources */,
 			);
@@ -671,6 +688,7 @@
 				8455791C1FA072B000818965 /* AddFundsViewController.m in Sources */,
 				84C65D861FB1377500D91CFE /* ProfileSecondHeaderView.m in Sources */,
 				84923F941FB399C30082BFA0 /* Scanner.m in Sources */,
+				84A742151FC64F9F000CFD16 /* LoginFooterView.m in Sources */,
 				84F079E91FA7E6DF00E40DD2 /* CreditcardTableViewCell.m in Sources */,
 				845E693B1F9FE08700F874F0 /* main.m in Sources */,
 				84CB4BB91FC0DB910063523D /* SplashViewController.m in Sources */,

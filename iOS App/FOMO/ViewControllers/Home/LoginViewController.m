@@ -29,6 +29,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self styleViews];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.usernameField resignFirstResponder];
+    [self.passwordField resignFirstResponder];
 }
 
 - (void)styleViews {
@@ -94,7 +105,7 @@
 - (IBAction)logInButtonTapped:(id)sender {
     PersistManager *persist = [[PersistManager alloc] init];
     User *potentialUser = [persist returnUserForKey:self.usernameField.text];
-    if (potentialUser != nil || self.passwordField.text == potentialUser.password) {
+    if (potentialUser.password != nil || potentialUser.username != nil || self.passwordField.text == potentialUser.password) {
         NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
         [defaults setObject:@"yes" forKey:@"didILogIn"];
         [defaults synchronize];

@@ -12,16 +12,38 @@
 
 @property (weak, nonatomic) IBOutlet UIView *header;
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
+@property (weak, nonatomic) IBOutlet UILabel *fundsDisplayLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *imgQRCode;
 @property (weak, nonatomic) IBOutlet UIButton *btnAction;
 @property (weak, nonatomic) IBOutlet UIView *backgroundView;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 @property (weak, nonatomic) IBOutlet UIButton *pickerButton;
 @property (strong) NSArray *pickerData;
+@property (strong, nonatomic) NSString *funds;
 
 @end
 
 @implementation BuyDrinksViewController
+
+- (instancetype)init {
+    self = [super initWithNibName:@"BuyDrinksViewController" bundle:nil];
+    if (self != nil)
+    {
+        // Further initialization if needed
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibName bundle:(NSBundle *)bundle {
+    NSAssert(NO, @"Initialize with -init");
+    return nil;
+}
+
+- (instancetype)initWithValue:(NSString *)value {
+    BuyDrinksViewController *viewController = [[BuyDrinksViewController alloc] init];
+    viewController.funds = value;
+    return viewController;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -41,7 +63,7 @@
 }
 
 - (void)setupPicker {
-    self.pickerData = @[@"Budweiser", @"Guiness", @"Corona", @"Boneshaker", @"1664 Kronenbourg", @"Stella Artois"];
+    self.pickerData = @[@"$4 Budweiser", @"$4 Guinness", @"$5 Corona", @"$4 Boneshaker", @"$5 1664 Kronenbourg", @"$5 Stella Artois"];
     self.pickerView.dataSource = self;
     self.pickerView.delegate = self;
 }
@@ -52,6 +74,7 @@
 }
 
 - (void)styleViews {
+    self.fundsDisplayLabel.text = self.funds;
     self.backgroundView.transform = CGAffineTransformMakeTranslation(0, [UIScreen mainScreen].bounds.size.height);
     self.backgroundView.alpha = 0.0f;
 }

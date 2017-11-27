@@ -16,4 +16,12 @@
 @property (strong, nonatomic) NSString *address;
 @property (nonatomic) float bankInfo;
 
+
+- (void)addInfo:(NSString *)bName
+      withEmail:(NSString *)bEmail
+    withAddress:(NSString *)bAddress;
+
+- (void)addToTab:(float)amounts;
+
+
 @end

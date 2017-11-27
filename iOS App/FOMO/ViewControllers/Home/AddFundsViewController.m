@@ -1,4 +1,4 @@
-//
+    //
 //  AddFundsViewController.m
 //  FOMO
 //
@@ -7,6 +7,8 @@
 //
 
 #import "AddFundsViewController.h"
+#import "User.h"
+#import "PersistManager.h"
 
 @interface AddFundsViewController ()
 
@@ -16,16 +18,41 @@
 @property (weak, nonatomic) IBOutlet UIButton *confirmButton;
 @property (weak, nonatomic) IBOutlet UIView *fundDisplayView;
 @property (weak, nonatomic) IBOutlet UIButton *changeButton;
+@property (weak, nonatomic) IBOutlet UITextField *fundsTextField;
 
 @end
 
 @implementation AddFundsViewController
+
+- (instancetype)init {
+    self = [super initWithNibName:@"AddFundsViewController" bundle:nil];
+    if (self != nil)
+    {
+        // Further initialization if needed
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibName bundle:(NSBundle *)bundle {
+    NSAssert(NO, @"Initialize with -init");
+    return nil;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupHeader];
     [self setupButtons];
     [self setupFundDisplayView];
+    [self setupListeners];
+}
+
+- (void)setupListeners {
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [self.view addGestureRecognizer:tap];
+}
+
+- (void)dismissKeyboard {
+    [self.fundsTextField resignFirstResponder];
 }
 
 - (void)setupHeader{
@@ -56,6 +83,18 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 - (IBAction)confirmButtonTapped:(id)sender {
+    PersistManager *persistManager = [[PersistManager alloc] init];
+    User *user = [[User alloc] init];
+    user = [persistManager returnUserForKey:@"asdf"];
+    float tab = [self.fundsTextField.text floatValue];
+    [user addToTab:tab];
+    [persistManager saveUser:user ForKey:@"asdf"];
+    id<AddFundsViewControllerDelegate> strongDelegate = self.delegate;
+    
+    if ([strongDelegate respondsToSelector:@selector(addFundsViewController:didChooseValue:)]) {
+        [strongDelegate addFundsViewController:self didChooseValue:user.tab];
+    }
+    
     [self dismissMyself];
 }
 - (IBAction)closeButtonTapped:(id)sender {

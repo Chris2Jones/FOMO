@@ -19,6 +19,7 @@
     user.address = [defaults objectForKey:[key stringByAppendingString:@"address"]];
     user.age = [defaults objectForKey:[key stringByAppendingString:@"age"]];
     user.password = [defaults objectForKey:[key stringByAppendingString:@"password"]];
+    user.tab = [defaults floatForKey:[key stringByAppendingString:@"tab"]];
     return user;
 }
 
@@ -30,6 +31,7 @@
     [defaults setObject:userToSave.address forKey:[key stringByAppendingString:@"address"]];
     [defaults setObject:userToSave.age forKey:[key stringByAppendingString:@"age"]];
     [defaults setObject:userToSave.password forKey:[key stringByAppendingString:@"password"]];
+    [defaults setFloat:userToSave.tab forKey:[key stringByAppendingString:@"tab"]];
     [defaults synchronize];
 }
 
