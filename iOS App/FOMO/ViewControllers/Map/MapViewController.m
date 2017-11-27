@@ -30,6 +30,16 @@
     GMSMarker *marker2 = [[GMSMarker alloc] init];
     GMSMarker *marker3 = [[GMSMarker alloc] init];
     GMSMarker *marker4 = [[GMSMarker alloc] init];
+    
+    GMSMarker *pre = [[GMSMarker alloc] init];
+    GMSMarker *houseJam = [[GMSMarker alloc]init];
+    
+    pre.position = CLLocationCoordinate2DMake(44.2341526, -76.4941664);
+    houseJam.position = CLLocationCoordinate2DMake(44.2316917, -76.4978805);
+    
+    pre.title = NSLocalizedString(@"David's pre", nil);
+    houseJam.title = NSLocalizedString(@"Rastislav's jam", nil);
+    
     marker.position = CLLocationCoordinate2DMake(44.2332813,-76.492527);
     marker2.position = CLLocationCoordinate2DMake(44.232849,-76.4929419);
     marker3.position = CLLocationCoordinate2DMake(44.233021,-76.4919934);
@@ -43,6 +53,10 @@
     marker2.map = self.mapContainerView;
     marker3.map = self.mapContainerView;
     marker4.map = self.mapContainerView;
+    
+    pre.map = self.mapContainerView;
+    houseJam.map = self.mapContainerView;
+    
     self.mapContainerView.camera = camera;
     self.mapContainerView.myLocationEnabled = YES;
 }
